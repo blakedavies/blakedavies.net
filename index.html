@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+<!-- META TAGS -->
+
+	<meta charset="UTF-8"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<meta name="keywords" content="single page websites, website, websites, webpage, design, webdesign, small business, business, hosting, code, coding, html, html5, css, css3"/>
+	
+	<meta name="description" content="A complete website solution for your business. Single page websites with included hosting and no Domain Name required."/>
+	
+	<meta name="robots" content="index,follow,noodp"/>  
+	
+	<meta name="googlebot" content="index,follow"/> 
+	
+	<meta name="google" content="nositelinkssearchbox"/>
+	
+	<meta name="google" content="notranslate"/>
+	
+	<meta name="subject" content="A complete website solution for your business. Single page websites with included hosting and no Domain Name required."/>  
+	
+	<meta name="abstract" content="A complete website solution for your business."/>
+	
+	<meta name="url" content="https://blakedavies.github.io/website/">
+	
+	<meta property="og:title" content="Blake Davies" />
+	
+	<meta property="og:type" content="Website"/>
+	
+	<!-- <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" /> -->
+	
+	<!-- <meta property="og:image" content="http://ia.media-imdb.com/rock.jpg" /> -->  
+	
+	<meta property="og:description" content="A complete website solution for your business. Single page websites with included hosting and no Domain Name required." />
+	
+	<link rel="canonical" href="https://blakedavies.github.io/website/"/>
+
+<!-- CSS STYLESHEETS -->
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+<!-- ICONS -->
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	
+	<title>Blake Davies</title>
+
+<!-- JAVASCRIPT -->
+
+	<!-- Cross Browser Support -->
+		
+		<script src="js/crossbrowsersupport.js" type="text/javascript"></script>
+	
+	<!-- Smooth Scrolling to Anchor -->
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$("a").on('click', function(event) {
+					if (this.hash !== "") {
+          	event.preventDefault();
+      			var hash = this.hash;
+        	$('html, body').animate({
+          	scrollTop: $(hash).offset().top
+          	}, 2000, function(){
+         	});
+        	}
+      	});
+    	});
+  	</script>	
+
+  <!-- Disable Hover CSS on Touch Devices -->
+
+	  <script>
+			;(function(){
+				var isTouch = false
+				var isTouchTimer 
+				var curRootClass = ''
+				function addtouchclass(e){
+					clearTimeout(isTouchTimer)
+					isTouch = true
+					if (curRootClass != 'can-touch'){
+						curRootClass = 'can-touch'
+						document.documentElement.classList.add(curRootClass)
+					}
+				isTouchTimer = setTimeout(function(){isTouch = false}, 500)
+				}
+	
+			function removetouchclass(e){
+					if (!isTouch && curRootClass == 'can-touch'){
+						isTouch = false
+						curRootClass = ''
+						document.documentElement.classList.remove('can-touch')
+					}
+				}
+	
+				document.addEventListener('touchstart', addtouchclass, false)
+				document.addEventListener('mouseover', removetouchclass, false)
+			})();
+		</script>	
+
+	<!-- Hamburger Nav Icon -->
+
+		<script>
+			$(document).ready(function(){
+				$('#home .menu-icon').click(function(){
+					$(this).toggleClass('open');
+				});
+			});
+		</script>
+
+  <!-- Side Nav Slider -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$("#home nav").hide();
+		  	$("#home .menu-icon").show();
+
+		  	$("#home .menu-icon").click(function(){
+		  		$("#home nav").toggle("slide");
+    		});
+
+				$("#home nav a").click(function(){
+					$("#home nav").hide("slide");
+					$('#home .menu-icon').removeClass('open'); 
+				});
+			});
+		</script>		
+
+</head>
+
+<body>
+
+<section id="home">
+
+<!-- FIXED HEADER -->
+
+	<header>
+		<a href="#home">
+			<img src="img/LOGO - 150x150.png" alt="Blake Davies"/>
+			<h1>Blake Davies</h1>
+		</a>
+		<div class="hidden-container">
+			<div class="menu-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav>
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="header-spacer">
+	</div>
+
+<!-- CAROUSEL -->
+
+	<div class="carousel-container carousel-1">
+		<h2>A Complete <br class="rwd-break"/>Website Solution</h2>
+		<p>Website design, coding & front end development, and included hosting.</p>
+		<div class="carousel-buttons">
+			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Blake Davies"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Blake Davies"/>
+		</div>
+	</div>
+
+	<div class="carousel-container carousel-2">
+		<h2>Responsive <br class="rwd-break"/>Web Design</h2>
+		<p>Beatiful, functional websites no matter the device they are viewed on.</p>
+		<div class="carousel-buttons">
+			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Blake Davies"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Blake Davies"/>
+		</div>
+	</div>
+
+	<div class="carousel-container carousel-3">
+		<h2>Cross Browser<br class="rwd-break"/> Compatability</h2>
+		<p>Websites that perform across popular browsers & operating systems.</p>
+		<div class="carousel-buttons">
+			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Blake Davies"/>
+			<span></span>
+			<span></span>
+			<span></span>
+			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Blake Davies"/>
+		</div>
+	</div>	
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+    	showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+    	var i;
+    	var x = document.getElementsByClassName("carousel-container");
+    	if (n > x.length) {slideIndex = 1} 
+    	if (n < 1) {slideIndex = x.length} ;
+    	for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    	}
+    	
+    	x[slideIndex-1].style.display = "block";
+		}
+	</script>
+
+<!--  -->
+
+
+
+	<div style="background-color:grey; height:100vh;">
+	</div>	
+
+</section>	
+
+</body>
+
+</html>	
