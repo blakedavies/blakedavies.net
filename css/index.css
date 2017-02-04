@@ -1,0 +1,291 @@
+/* FONTS */
+
+	@font-face {
+	  font-family:'Bebas';
+	  src: url('../fonts/Bebas/Bebas.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Bebas/Bebas.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       url('../fonts/Bebas/Bebas.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('../fonts/Bebas/Bebas.woff') format('woff'), /* Pretty Modern Browsers */
+	       url('../fonts/Bebas/Bebas.ttf')  format('truetype'), /* Safari, Android, iOS */
+	       url('../fonts/Bebas/Bebas.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+	@font-face {
+	  font-family:'Awesawez';
+	  src: url('../fonts/Awesawez/Awesawez.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Awesawez/Awesawez.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	     url('../fonts/Awesawez/Awesawez.woff2') format('woff2'), /* Super Modern Browsers */
+    	   url('../fonts/Awesawez/Awesawez.woff') format('woff'), /* Pretty Modern Browsers */
+      	 url('../fonts/Awesawez/Awesawez.ttf')  format('truetype'), /* Safari, Android, iOS */
+       	 url('../fonts/Awesawez/Awesawez.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+	@font-face {
+  	font-family:'Quicksand';
+  	src: url('../fonts/Quicksand/Quicksand-Regular.eot'); /* IE9 Compat Modes */
+  	src: url('../fonts/Quicksand/Quicksand-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  	     url('../fonts/Quicksand/Quicksand-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+  	     url('../fonts/Quicksand/Quicksand-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+  	     url('../fonts/Quicksand/Quicksand-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  	     url('../fonts/Quicksand/Quicksand-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
+
+/* STANDARD CSS */
+
+	* {
+	  -webkit-box-sizing:border-box;
+  	   -moz-box-sizing:border-box;
+    	   -o-box-sizing:border-box;
+    	  -ms-box-sizing:border-box;
+      	    box-sizing:border-box;
+	}
+	body {
+	  overflow-x:hidden;
+	  margin:0;
+	  padding:0;
+	}
+	a {
+		text-decoration:none;
+	}
+
+/* HEADER */
+
+	#home .header-spacer {
+		height:26vmin;
+	}
+
+	#home header {
+		-webkit-z-index: 999;
+	     -moz-z-index: 999;
+	       -o-z-index: 999;
+	      -ms-z-index: 999;
+	          z-index: 999;
+	  position: fixed;
+	  width:100%;
+	  padding:5vmin;
+	  background-color:rgb(255,255,255);
+	  -webkit-box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+       -moz-box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+         -o-box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+        -ms-box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+            box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+	}
+	#home img {
+		height:auto;
+		width:15vmin;
+	}
+	#home h1 {
+		font-family:'Bebas';
+		display:inline;
+		color:rgb(25,27,29);
+		font-size:6.5vmin;
+		letter-spacing:1.5vw;
+		padding-left:1.5vw;
+		margin:0;
+	}
+	#home .hidden-container {
+		position:absolute;
+		right:6vmin;
+		bottom:5.83vmin;
+	}
+	#home .menu-icon {
+		width:7.5vmin;
+		height:6.5vmin;
+		position:relative;
+		bottom:0;
+		right:0;
+		-webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+    cursor: pointer;
+	}
+	#home .menu-icon span {
+		display:block;
+		position:absolute;
+		height:1.3vmin;
+		width:100%;
+		background:rgb(25,27,29);
+		border-radius:1vmin;
+		opacity:1;
+		left:0;
+		-webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+       -moz-transition: 0.5s ease-in-out;
+         -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+	}
+	#home .menu-icon span:nth-child(1) {
+		top:0;
+	}
+	#home .menu-icon span:nth-child(2), #home .menu-icon span:nth-child(3) {
+		top:2.6vmin;
+	}
+	#home .menu-icon span:nth-child(4) {
+		top:5.2vmin;
+	}
+	#home .menu-icon.open span:nth-child(1) {
+		top:2.6vmin;
+		width:0%;
+		left:50%;
+	}
+	#home .menu-icon.open span:nth-child(2) {
+		-webkit-transform: rotate(225deg);
+       -moz-transform: rotate(225deg);
+         -o-transform: rotate(225deg);
+            transform: rotate(225deg);
+	}
+	#home .menu-icon.open span:nth-child(3) {
+		-webkit-transform: rotate(-225deg);
+       -moz-transform: rotate(-225deg);
+         -o-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+	}
+	#home .menu-icon.open span:nth-child(4) {
+		top:2.6vmin;
+		width:0%;
+		left:50%;
+	}
+	#home nav {
+		display: block;
+  	height:100vh;
+  	padding-left:50%;
+  	padding-right:50%;
+  	width:30vw;
+  	background-color:rgba(25,27,29,0.75);
+  	position: absolute;
+  	right:-6vmin;
+  	margin-top:6vmin;
+  	font-family:'Quicksand'; 
+  	display:center;
+  	font-size:4.25vmin;
+	}
+	#home nav a {
+  	background-color:rgb(255,255,255);
+  	color:rgb(25,27,29);
+  	padding:1vmin;
+  	margin-top:2.5vmin;
+  	text-decoration:none;
+  	display:block;
+    -webkit-border-radius:1vmin;
+       -moz-border-radius:1vmin;
+         -o-border-radius:1vmin;
+        -ms-border-radius:1vmin;
+            border-radius:1vmin;
+    -webkit-box-shadow:0.35vmin 0.35vmin 1vmin 0.15vmin rgb(25,27,29);
+       -moz-box-shadow:0.35vmin 0.35vmin 1vmin 0.15vmin rgb(25,27,29);
+         -o-box-shadow:0.35vmin 0.35vmin 1vmin 0.15vmin rgb(25,27,29);
+        -ms-box-shadow:0.35vmin 0.35vmin 1vmin 0.15vmin rgb(25,27,29);
+            box-shadow:0.35vmin 0.35vmin 1vmin 0.15vmin rgb(25,27,29); 
+	}
+
+/* CAROUSEL */
+
+	#home .carousel-container {
+		padding:5vmin;
+		-webkit-background-size:cover;
+	     -moz-background-size:cover;
+  	     -o-background-size:cover;
+  	    -ms-background-size:cover;
+   	        background-size:cover;
+	}
+	#home .carousel-container h2 {
+		font-family:'Quicksand';
+		font-weight:300;
+		font-size:7.5vmin;
+		color:rgb(255,255,255);
+	}
+	#home .carousel-container p {
+		font-family:'Quicksand';
+		font-weight:100;
+		font-size:5vmin;
+		color:rgb(255,255,255);
+	}
+	#home .carousel-buttons {
+		text-align:center;
+		margin-top:12.5vmin;
+	}
+	#home .carousel-buttons span {
+		display:inline-block;
+		height:2.5vmin;
+		width:2.5vmin;
+		margin-bottom:1.25vmin;
+		margin-left:0.75vmin;
+		margin-right:0.75vmin;
+		background-color:rgba(255,255,255,0);
+		border:0.25vmin solid rgb(255,255,255);
+		-webkit-border-radius:50%;
+  	   -moz-border-radius:50%;
+    	   -o-border-radius:50%;
+    	  -ms-border-radius:50%;
+    	      border-radius:50%;
+	}
+	#home .carousel-buttons img {
+		cursor:pointer;
+		display:inline-block;
+		height:auto;
+		width:2.5vmin;
+		margin-right:5vmin;
+		margin-left:5vmin;
+	}
+	#home .carousel-container.carousel-1 {
+		background-image: url("../img/cup-of-coffee-laptop-office-macbook-89786.jpeg");
+		background-position:10% 25%;	
+	}
+	#home .carousel-container.carousel-1 h2 {
+		text-align:center;
+	}
+	#home .carousel-container.carousel-1 p {
+		padding-left:20%;
+		padding-right:20%;
+		text-align:center;
+	}
+	#home .carousel-container.carousel-1 .carousel-buttons span:nth-child(2) {
+		background-color:rgba(255,255,255,1);
+	}
+
+	#home .carousel-container.carousel-2 {
+		background-image: url("../img/laptop-glasses-coffe-preview-850x565.jpg");
+		background-position:10% 25%;
+	}
+	#home .carousel-container.carousel-2 .carousel-buttons span:nth-child(3) {
+		background-color:rgba(255,255,255,1);
+	}
+	#home .carousel-container.carousel-2 p {
+		width:60%;
+	}
+
+	#home .carousel-container.carousel-3 {
+		background-image: url("../img/laptop-preview-850x635.jpg");
+		background-position:50% 50%;
+	}
+	#home .carousel-container.carousel-3 .carousel-buttons span:nth-child(4) {
+		background-color:rgba(255,255,255,1);
+	}
+	#home .carousel-container.carousel-3 h2 {
+		text-align:right;
+	}
+	#home .carousel-container.carousel-3 p {
+		padding-left:40%;
+		text-align:right;
+	}
+
+
+
+
+/* MEDIA QUERIES */
+
+	@media screen and (orientation:portrait) {
+		.rwd-break {
+			display:block;
+		}
+	}
+
+
+	@media screen and (orientation:landscape) {
+		.rwd-break {
+			display:none;
+		}
+	}
+
