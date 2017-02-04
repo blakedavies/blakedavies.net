@@ -230,7 +230,7 @@
 		margin-left:5vmin;
 	}
 	#home .carousel-container.carousel-1 {
-		background-image: url("../img/cup-of-coffee-laptop-office-macbook-89786.jpeg");
+		background-image: url("../img/laptop_coffee.jpeg");
 		background-position:10% 25%;	
 	}
 	#home .carousel-container.carousel-1 h2 {
@@ -246,7 +246,7 @@
 	}
 
 	#home .carousel-container.carousel-2 {
-		background-image: url("../img/laptop-glasses-coffe-preview-850x565.jpg");
+		background-image: url("../img/laptop_glasses_coffe.jpg");
 		background-position:10% 25%;
 	}
 	#home .carousel-container.carousel-2 .carousel-buttons span:nth-child(3) {
@@ -257,7 +257,7 @@
 	}
 
 	#home .carousel-container.carousel-3 {
-		background-image: url("../img/laptop-preview-850x635.jpg");
+		background-image: url("../img/laptop_phone_plant.jpg");
 		background-position:50% 50%;
 	}
 	#home .carousel-container.carousel-3 .carousel-buttons span:nth-child(4) {
