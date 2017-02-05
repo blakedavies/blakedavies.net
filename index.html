@@ -133,7 +133,34 @@
 					$('#home .menu-icon').removeClass('open'); 
 				});
 			});
-		</script>		
+		</script>
+
+	<!-- Sticky Header -->
+	
+		<script>
+			var viewportHeight = $(window).height();
+	   	$(window).scroll(function() {
+  	  	if ($(window).scrollTop() / $(window).height() / 0.01 > 1 ){ 
+   		  	$('#home header').addClass("sticky"); 
+	   		  $('#home img').addClass("sticky");
+  	 		  $('#home h1').addClass("sticky");
+  	 		  $('#home .hidden-container').addClass("sticky");
+  	 		  $('#home .header-spacer').addClass("sticky");
+  	 		}
+  	 		else {
+   		  	$('#home header').removeClass("sticky"); 
+	   		  $('#home img').removeClass("sticky");
+  	 		  $('#home h1').removeClass("sticky");
+  	 		  $('#home .hidden-container').removeClass("sticky");
+  	 		  $('#home .header-spacer').removeClass("sticky");
+				}
+
+				if ($(window).scrollTop() / $(window).height() / 0.02 < 1 ){ 	
+  	 		  $("#home nav").hide(); 
+  	      $('#home .menu-icon').removeClass('open'); 
+  			}
+  		});
+  	</script>		
 
 </head>
 
@@ -157,8 +184,8 @@
 			</div>
 			<nav>
 				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
+				<a href="#about-anchor">About</a>
+				<a href="#contact-anchor">Contact</a>
 			</nav>
 		</div>
 	</header>
@@ -171,36 +198,45 @@
 	<div class="carousel-container carousel-1">
 		<h2>A Complete <br class="rwd-break"/>Website Solution</h2>
 		<p>Website design, coding & front end development, and included hosting.</p>
+		<div class="button">
+			<a href="#contact-anchor">Get Started Today!!</a>
+		</div>
 		<div class="carousel-buttons">
-			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Blake Davies"/>
+			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Previous"/>
 			<span></span>
 			<span></span>
 			<span></span>
-			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Blake Davies"/>
+			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Next"/>
 		</div>
 	</div>
 
 	<div class="carousel-container carousel-2">
 		<h2>Responsive <br class="rwd-break"/>Web Design</h2>
 		<p>Beatiful, functional websites no matter the device they are viewed on.</p>
+		<div class="button">
+			<a href="#contact-anchor">Get Started Today!!</a>
+		</div>
 		<div class="carousel-buttons">
-			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Blake Davies"/>
+			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Previous"/>
 			<span></span>
 			<span></span>
 			<span></span>
-			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Blake Davies"/>
+			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Next"/>
 		</div>
 	</div>
 
 	<div class="carousel-container carousel-3">
 		<h2>Cross Browser<br class="rwd-break"/> Compatability</h2>
 		<p>Websites that perform across popular browsers & operating systems.</p>
+		<div class="button">
+			<a href="#contact-anchor">Get Started Today!!</a>
+		</div>
 		<div class="carousel-buttons">
-			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Blake Davies"/>
+			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Previous"/>
 			<span></span>
 			<span></span>
 			<span></span>
-			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Blake Davies"/>
+			<img src="img/arrow_icon_right_white.png" onclick="plusDivs(+1)" alt="Next"/>
 		</div>
 	</div>	
 
@@ -225,14 +261,134 @@
 		}
 	</script>
 
-<!--  -->
+</section>
+
+
+<section id="about">
+
+<span id="about-anchor" class="anchor"></span>
+
+<!-- SERVICES -->
+
+	<div class="services-container">
+		<img src="img/website_computer.png" alt="Single Page Websites"/>
+		<h3>Single Page Websites</h3>
+		<p>Avoid visitors to your website getting lost in multiple layers of navigation or stuck in an endless search for what they need. Single page websites are a perfect way to keep things simple yet elegant.</p>
+
+		<img src="img/responsive_web_design.png" alt="Compatible Design"/>
+		<h3>Compatible Design</h3>
+		<p>Implementation of responsive web design and cross browser testing ensures that your website is displayed in all its beauty no matter how it is resized or what operating device it is viewed on.</p>
+
+		<img src="img/server_hosting.png" alt="Hosting & Support"/>
+		<h3>Hosting & Support</h3>
+		<p>Get your website live on the internet with included hosting and no requirement for a Domain Name necessary. Enjoy the flexibility of ongoing support if you ever need to change or update your site.</p>
+	</div>
+
+<!-- ABOUT -->
+
+	<div class="about-container">
+		<div class="circle">
+		</div>
+		<h3>Blake Davies</h3>
+		<p>With experience in HTML5, CSS3, & JS, Blake Davies uses his diverse background in business services to deliver a coomplete website solution for small business and start-ups.</p>
+	</div>
+
+</section>
+
+
+<section id="contact">
+
+<span id="contact-anchor" class="anchor"></span>
+
+<!-- CONTACT -->
+
+	<div class="contact-container">
+		<h3>Getting started is easy!!</h3>
+		<p>Take the first steps getting your website built and live on the internet today!!</p>
+	
+		<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSehItCBxxXwyzSVhB35Ao9Zkl9G0vDtSEzlR8zknRQWFtp9dw/formResponse">
+
+    	<input class="name" name="entry.558223707" id="entry.558223707" placeholder="Name" required>
+
+
+    	<input class="phone" name="entry.877542590" id="entry.877542590" placeholder="Phone" required>
+
+
+    	<input class="email" name="entry.1596190029" id="entry.1596190029" type="email" placeholder="Email" required>
+
+
+    	<textarea name="entry.1268288448" id="entry.1268288448" placeholder="Message" required></textarea>
+
+    	<input class="submit" name="submit" type="submit" value="Send Message">
+
+  	</form>
+
+  </div>
+
+	<script>
+    $('#gform').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSehItCBxxXwyzSVhB35Ao9Zkl9G0vDtSEzlR8zknRQWFtp9dw/formResponse",
+        data: $(this).serialize(),
+        type: "POST",
+        dataType: "xml",
+        success: function(data) {
+          console.log('Submission successful');
+        },
+        error: function(xhr, status, error) {
+          console.log('Submission failed: ' + error);
+        }
+      });
+    });
+    $('#gform').on('submit', function(e) {
+  		$('#gform *').fadeOut(0);
+  		$('#gform').prepend(
+    		'<p class="thankyou">Thank-you!!<br/><br/>Your Message has been submitted successfully and you will receive a reply within 24 hours.</p>'
+    	);
+  	});
+	</script>
+
+</section>
+
+<section id="footer">
+
+<!-- FOOTER -->
+
+	<footer>
+
+		<div>
+			<img src="img/abn_icon.png" alt="ABN"/>
+			<h3>90 440 395 198</h3>
+		</div>		
+		
+		<div>
+			<img src="img/phone_icon.png" alt="Phone"/>
+			<h3>0475 065 444</h3>
+		</div>		
+		
+		<div>		
+			<img src="img/email_icon.png" alt="Email"/>
+			<h3>blakedavies@gmail.com</h3>
+		</div>		
+	
+		<div>		
+			<img src="img/info_icon.png" alt="Info"/>
+			<h3>Terms & Conditions</h3>
+		</div>		
 
 
 
-	<div style="background-color:grey; height:100vh;">
-	</div>	
+		<a href="#home">
+			<img src="img/LOGO - 150x150.png" alt="Blake Davies"/>
+			<h1>Blake Davies</h1>
+		</a>
 
-</section>	
+		<p>&#169 2017 Blake Davies. All Rights Reserved.</p>
+
+	</footer>
+
+</section>
 
 </body>
 
