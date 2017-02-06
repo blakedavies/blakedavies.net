@@ -26,7 +26,7 @@
 	
 	<meta name="abstract" content="A complete website solution for your business."/>
 	
-	<meta name="url" content="https://blakedavies.github.io/website/">
+	<meta name="url" content="https://blakedavies.github.io/websites/">
 	
 	<meta property="og:title" content="Blake Davies" />
 	
@@ -38,7 +38,7 @@
 	
 	<meta property="og:description" content="A complete website solution for your business. Single page websites with included hosting and no Domain Name required." />
 	
-	<link rel="canonical" href="https://blakedavies.github.io/website/"/>
+	<link rel="canonical" href="https://blakedavies.github.io/websites/"/>
 
 <!-- CSS STYLESHEETS -->
 	
@@ -109,7 +109,7 @@
 
 		<script>
 			$(document).ready(function(){
-				$('#home .menu-icon').click(function(){
+				$('#home header .menu-icon').click(function(){
 					$(this).toggleClass('open');
 				});
 			});
@@ -121,16 +121,16 @@
 		<script type="text/javascript">
 
 			$(document).ready(function(){
-				$("#home nav").hide();
-		  	$("#home .menu-icon").show();
+				$("#home header nav").hide();
+		  	$("#home header .menu-icon").show();
 
-		  	$("#home .menu-icon").click(function(){
-		  		$("#home nav").toggle("slide");
+		  	$("#home header .menu-icon").click(function(){
+		  		$("#home header nav").toggle("slide");
     		});
 
-				$("#home nav a").click(function(){
-					$("#home nav").hide("slide");
-					$('#home .menu-icon').removeClass('open'); 
+				$("#home header nav a").click(function(){
+					$("#home header nav").hide("slide");
+					$('#home header .menu-icon').removeClass('open'); 
 				});
 			});
 		</script>
@@ -142,22 +142,22 @@
 	   	$(window).scroll(function() {
   	  	if ($(window).scrollTop() / $(window).height() / 0.01 > 1 ){ 
    		  	$('#home header').addClass("sticky"); 
-	   		  $('#home img').addClass("sticky");
-  	 		  $('#home h1').addClass("sticky");
-  	 		  $('#home .hidden-container').addClass("sticky");
+	   		  $('#home header img').addClass("sticky");
+  	 		  $('#home header h1').addClass("sticky");
+  	 		  $('#home header .hidden-container').addClass("sticky");
   	 		  $('#home .header-spacer').addClass("sticky");
   	 		}
   	 		else {
    		  	$('#home header').removeClass("sticky"); 
-	   		  $('#home img').removeClass("sticky");
-  	 		  $('#home h1').removeClass("sticky");
-  	 		  $('#home .hidden-container').removeClass("sticky");
+	   		  $('#home header img').removeClass("sticky");
+  	 		  $('#home header h1').removeClass("sticky");
+  	 		  $('#home header .hidden-container').removeClass("sticky");
   	 		  $('#home .header-spacer').removeClass("sticky");
 				}
 
 				if ($(window).scrollTop() / $(window).height() / 0.02 < 1 ){ 	
-  	 		  $("#home nav").hide(); 
-  	      $('#home .menu-icon').removeClass('open'); 
+  	 		  $("#home header nav").hide(); 
+  	      $('#home header .menu-icon').removeClass('open'); 
   			}
   		});
   	</script>		
@@ -261,6 +261,49 @@
 		}
 	</script>
 
+<!-- SUBSCRIBE -->
+
+	<div class="section-break">
+
+			<img src="img/envelope.png" alt="Single Page Websites"/>
+
+		<form name="gform2" id="gform2" enctype="text/plain" action="https://docs.google.com/forms/d/1eIr7nnUwdUKegIcJMEWf2RaUWmlrCp3LIvI6R3kswZo/formResponse">
+
+    	<input class="name" name="entry.115064419" id="entry.115064419" placeholder="Name" required>
+
+    	<input class="email" name="entry.337134287" id="entry.337134287" type="email" placeholder="Email" required>
+
+
+    	<input class="submit" id="submit" name="submit" type="submit" value="Subscribe">
+
+  	</form>
+
+		<script>
+	    $('#gform2').submit(function(d) {
+	      d.preventDefault();
+	      $.ajax({
+	        url: "https://docs.google.com/forms/d/1eIr7nnUwdUKegIcJMEWf2RaUWmlrCp3LIvI6R3kswZo/formResponse",
+	        data: $(this).serialize(),
+	        type: "POST",
+	        dataType: "xml",
+	        success: function(data) {
+	          console.log('Submission successful');
+	        },
+	        error: function(xhr, status, error) {
+	          console.log('Submission failed: ' + error);
+	        }
+	      });
+	    });
+	    $('#gform2').on('submit', function(d) {
+	  		$('#gform2 *').fadeOut(0);
+	  		$('#gform2').prepend(
+	    		'<h3 class="thank-you">Thank-you!!<h3><p class="thank-you">You are now subscribed to Blake Davies.</p>'
+	    	);
+	  	});
+		</script>
+
+	</div>
+
 </section>
 
 
@@ -271,26 +314,38 @@
 <!-- SERVICES -->
 
 	<div class="services-container">
-		<img src="img/website_computer.png" alt="Single Page Websites"/>
-		<h3>Single Page Websites</h3>
-		<p>Avoid visitors to your website getting lost in multiple layers of navigation or stuck in an endless search for what they need. Single page websites are a perfect way to keep things simple yet elegant.</p>
 
-		<img src="img/responsive_web_design.png" alt="Compatible Design"/>
-		<h3>Compatible Design</h3>
-		<p>Implementation of responsive web design and cross browser testing ensures that your website is displayed in all its beauty no matter how it is resized or what operating device it is viewed on.</p>
+		<div class="wrapper">
+			<img src="img/website_computer.png" alt="Single Page Websites"/>
+			<h3>Single Page Websites</h3>
+			<p>Avoid visitors to your website getting lost in multiple layers of navigation or stuck in an endless search for what they need. Single page websites are a perfect way to keep things simple yet elegant.</p>
+		</div>
+		
+		<div class="spacer">
+		</div>
 
-		<img src="img/server_hosting.png" alt="Hosting & Support"/>
-		<h3>Hosting & Support</h3>
-		<p>Get your website live on the internet with included hosting and no requirement for a Domain Name necessary. Enjoy the flexibility of ongoing support if you ever need to change or update your site.</p>
+		<div class="wrapper">
+			<img src="img/responsive_web_design.png" alt="Compatible Design"/>
+			<h3>Compatible Design</h3>
+			<p>Implementation of responsive web design and cross browser testing ensures that your website is displayed in all its beauty no matter how it is resized or what operating device it is viewed on.</p>
+		</div>
+
+		<div class="spacer">
+		</div>
+
+		<div class="wrapper">
+			<img src="img/server_hosting.png" alt="Hosting & Support"/>
+			<h3>Hosting & Support</h3>
+			<p>Get your website live on the internet with included hosting and no requirement for a Domain Name. Enjoy the flexibility of ongoing support if you ever need to change or update your site later.</p>
+		</div>
 	</div>
 
 <!-- ABOUT -->
 
 	<div class="about-container">
-		<div class="circle">
-		</div>
+		<img src="img/blake_davies.jpg" alt="Blake Davies"/>
 		<h3>Blake Davies</h3>
-		<p>With experience in HTML5, CSS3, & JS, Blake Davies uses his diverse background in business services to deliver a coomplete website solution for small business and start-ups.</p>
+		<p>With experience in HTML5, CSS3, & JS, Blake Davies uses his diverse background in business services to deliver a complete website solution for small businesses and start-ups.</p>
 	</div>
 
 </section>
@@ -303,9 +358,11 @@
 <!-- CONTACT -->
 
 	<div class="contact-container">
-		<h3>Getting started is easy!!</h3>
-		<p>Take the first steps getting your website built and live on the internet today!!</p>
-	
+		<div id="contact-box">
+			<h3>Get started today!!</h3>
+			<p id="contactp">Take the first steps to getting your website built and live on the internet!!</p>
+		</div>	
+
 		<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSehItCBxxXwyzSVhB35Ao9Zkl9G0vDtSEzlR8zknRQWFtp9dw/formResponse">
 
     	<input class="name" name="entry.558223707" id="entry.558223707" placeholder="Name" required>
@@ -323,31 +380,32 @@
 
   	</form>
 
-  </div>
+	  <script>
+	    $('#gform').submit(function(e) {
+	      e.preventDefault();
+	      $.ajax({
+	        url: "https://docs.google.com/forms/d/e/1FAIpQLSehItCBxxXwyzSVhB35Ao9Zkl9G0vDtSEzlR8zknRQWFtp9dw/formResponse",
+	        data: $(this).serialize(),
+	        type: "POST",
+	        dataType: "xml",
+	        success: function(data) {
+	          console.log('Submission successful');
+	        },
+	        error: function(xhr, status, error) {
+	          console.log('Submission failed: ' + error);
+	        }
+	      });
+	    });
+	    $('#gform').on('submit', function(e) {
+	  		$('#gform *').fadeOut(0);
+	  		$('#contact-box *').fadeOut(0);
+	  		$('#gform').prepend(
+	    		'<h3 class="thank-you">Thank-you!!<h3><p class="thank-you">Your message has been submitted successfully and you will receive a reply within 24 hours.</p>'
+	    	);
+	  	});
+		</script>
 
-	<script>
-    $('#gform').submit(function(e) {
-      e.preventDefault();
-      $.ajax({
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSehItCBxxXwyzSVhB35Ao9Zkl9G0vDtSEzlR8zknRQWFtp9dw/formResponse",
-        data: $(this).serialize(),
-        type: "POST",
-        dataType: "xml",
-        success: function(data) {
-          console.log('Submission successful');
-        },
-        error: function(xhr, status, error) {
-          console.log('Submission failed: ' + error);
-        }
-      });
-    });
-    $('#gform').on('submit', function(e) {
-  		$('#gform *').fadeOut(0);
-  		$('#gform').prepend(
-    		'<p class="thankyou">Thank-you!!<br/><br/>Your Message has been submitted successfully and you will receive a reply within 24 hours.</p>'
-    	);
-  	});
-	</script>
+	</div>
 
 </section>
 
@@ -356,34 +414,40 @@
 <!-- FOOTER -->
 
 	<footer>
-
-		<div>
-			<img src="img/abn_icon.png" alt="ABN"/>
-			<h3>90 440 395 198</h3>
-		</div>		
+		<div class="container">
+			<div class="wrapper">
+				<img src="img/abn_icon.png" alt="ABN"/>
+				<h3>90 440 395 198</h3>
+			</div>		
 		
-		<div>
-			<img src="img/phone_icon.png" alt="Phone"/>
-			<h3>0475 065 444</h3>
-		</div>		
+			<div class="wrapper">
+				<img src="img/phone_icon.png" alt="Phone"/>
+				<h3>0475 065 444</h3>
+			</div>		
 		
-		<div>		
-			<img src="img/email_icon.png" alt="Email"/>
-			<h3>blakedavies@gmail.com</h3>
-		</div>		
+			<div class="wrapper">		
+				<img src="img/email_icon.png" alt="Email"/>
+				<h3>blakedavies@gmail.com</h3>
+			</div>		
 	
-		<div>		
-			<img src="img/info_icon.png" alt="Info"/>
-			<h3>Terms & Conditions</h3>
-		</div>		
+			<div class="wrapper">		
+				<img src="img/info_icon.png" alt="Info"/>
+				<h3><a href="#">Terms & Conditions</a></h3>
+			</div>
 
+			<div class="wrapper">		
+				<img src="img/alert_icon.png" alt="Info"/>
+				<h3><a href="#">Privacy Policy</a></h3>
+			</div>			
+		</div>
 
-
-		<a href="#home">
-			<img src="img/LOGO - 150x150.png" alt="Blake Davies"/>
-			<h1>Blake Davies</h1>
-		</a>
-
+		<div>
+			<a href="#home">
+				<img src="img/LOGO - 150x150.png" alt="Blake Davies"/>
+				<h1>Blake Davies</h1>
+			</a>
+		</div>
+	
 		<p>&#169 2017 Blake Davies. All Rights Reserved.</p>
 
 	</footer>
