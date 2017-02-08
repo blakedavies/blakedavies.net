@@ -52,21 +52,83 @@
   visibility: hidden;
 	}
 
+/* PAGE LOADER */
+
+	.loader {
+	  -webkit-position: fixed;
+	     -moz-position: fixed;
+	       -o-position: fixed;
+	      -ms-position: fixed;
+	          position: fixed;
+	  left:0px;
+	  top:0px;
+	  width:100%;
+	  height:100%;
+	  -webkit-z-index: 9999;
+	     -moz-z-index: 9999;
+	       -o-z-index: 9999;
+	      -ms-z-index: 9999;
+	          z-index: 9999;
+	  background: url('../img/loading_icon_gears.gif') 50% 50% no-repeat rgb(255,255,255);
+	}
+
 /* FIXED HEADER */
 
 	#home .header-spacer {
-		height:39vmin;
+		text-align:center;
+	  width:100%;
+	  padding:5vmin;
+	  background-color:rgb(255,255,255);
+	  background-image:url("../img/7rycIZ8.png");
+	  -webkit-box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+       -moz-box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+         -o-box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+        -ms-box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+            box-shadow:0px 0px 1vmin 0.35vmin rgb(25,27,29);
+    -webkit-transition: all 0.25s ease;
+		   -moz-transition: all 0.25s ease;
+		     -o-transition: all 0.25s ease;
+		    -ms-transition: all 0.25s ease;
+		        transition: all 0.25s ease;	
+	}
+	#home .header-spacer.sticky {
+		text-align:left;
+		padding-top:2vmin;
+		padding-bottom:0.5vmin;	
+	}
+	#home .header-spacer img {
+		height:auto;
+		width:15vmin;
     -webkit-transition: all 0.25s ease;
 		   -moz-transition: all 0.25s ease;
 		     -o-transition: all 0.25s ease;
 		    -ms-transition: all 0.25s ease;
 		        transition: all 0.25s ease;		
 	}
-	#home .header-spacer.sticky {
-		background-color:rgb(255,255,255);
-	  background-image:url("../img/7rycIZ8.png");
-		height:13.5vmin;
+	#home .header-spacer img.sticky {
+		width:10vmin;
 	}
+	#home .header-spacer h1 {
+		font-family:'Bebas';
+		color:rgb(25,27,29);
+		font-size:6.5vmin;
+		letter-spacing:2.5vw;
+		padding-left:2.5vw;
+		margin-bottom:0;
+    -webkit-transition: all 0.25s ease;
+		   -moz-transition: all 0.25s ease;
+		     -o-transition: all 0.25s ease;
+		    -ms-transition: all 0.25s ease;
+		        transition: all 0.25s ease;		
+	}
+	#home .header-spacer h1.sticky {
+		display:inline;
+		font-size:4vmin;
+		letter-spacing:1.25vw;
+		padding-left:1.25vw;		
+	}
+
+
 	#home header {
 		text-align:center;
 		-webkit-z-index: 999;
@@ -133,11 +195,11 @@
 		display:block;
 		position:absolute;
 		right:5vmin;
-		bottom:1.25vmin;
+		bottom:1.5vmin;
 	}
 	#home header .menu-icon {
-		width:6.5vmin;
-		height:5vmin;
+		width:25px;
+		height:20px;
 		position:relative;
 		bottom:0;
 		right:0;
@@ -145,12 +207,12 @@
        -moz-transform: rotate(0deg);
          -o-transform: rotate(0deg);
             transform: rotate(0deg);
-    cursor: pointer;
+    cursor:pointer;
 	}
 	#home header .menu-icon span {
 		display:block;
 		position:absolute;
-		height:1vmin;
+		height:4px;
 		width:100%;
 		background:rgb(25,27,29);
 		border-radius:1vmin;
@@ -169,13 +231,13 @@
 		top:0;
 	}
 	#home header .menu-icon span:nth-child(2), #home header .menu-icon span:nth-child(3) {
-		top:2vmin;
+		top:8px;
 	}
 	#home header .menu-icon span:nth-child(4) {
-		top:4vmin;
+		top:16px;
 	}
 	#home header .menu-icon.open span:nth-child(1), #home .menu-icon.open span:nth-child(4) {
-		top:2vmin;
+		top:8px;
 		width:0%;
 		left:50%;
 	}
@@ -404,6 +466,7 @@
 		border:0.25vmin solid rgb(25,27,29);	
 	}
 	#home form input.submit {
+		margin-top:5vmin;
 		cursor:pointer;
 		font-family:'Quicksand'; 
   	font-size:3vmin;
@@ -563,7 +626,6 @@
 		border:0.25vmin solid rgb(255,255,255);	
 	}
 	#contact form textarea {
-		margin-bottom:5vmin;
 		height:25vmin;
 		width:100%;
 		font-family:'Quicksand'; 
@@ -609,6 +671,7 @@
     color:rgb(155,155,155);
 	}	
 	#contact form input.submit {
+		margin-top:5vmin;
 		cursor:pointer;
 		font-family:'Quicksand'; 
   	font-size:3vmin;
