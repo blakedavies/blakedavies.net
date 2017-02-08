@@ -52,6 +52,16 @@
 
 <!-- JAVASCRIPT -->
 
+	<!-- Page Loader -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  	<script type="text/javascript">
+    	$(window).load(function() {
+      	$(".loader").fadeOut("slow");
+    	})
+  	</script>
+
 	<!-- Cross Browser Support -->
 		
 		<script src="js/crossbrowsersupport.js" type="text/javascript"></script>
@@ -146,6 +156,8 @@
   	 		  $('#home header h1').addClass("sticky");
   	 		  $('#home header .hidden-container').addClass("sticky");
   	 		  $('#home .header-spacer').addClass("sticky");
+  	 		  $('#home .header-spacer img').addClass("sticky");
+  	 		  $('#home .header-spacer h1').addClass("sticky");
   	 		}
   	 		else {
    		  	$('#home header').removeClass("sticky"); 
@@ -153,6 +165,8 @@
   	 		  $('#home header h1').removeClass("sticky");
   	 		  $('#home header .hidden-container').removeClass("sticky");
   	 		  $('#home .header-spacer').removeClass("sticky");
+  	 		  $('#home .header-spacer img').removeClass("sticky");
+  	 		  $('#home .header-spacer h1').removeClass("sticky");
 				}
 
 				if ($(window).scrollTop() / $(window).height() / 0.02 < 1 ){ 	
@@ -160,11 +174,13 @@
   	      $('#home header .menu-icon').removeClass('open'); 
   			}
   		});
-  	</script>		
+  	</script>	
 
 </head>
 
-<body>
+<body class="no-touch">
+
+<div class="loader"></div>
 
 <section id="home">
 
@@ -191,6 +207,8 @@
 	</header>
 
 	<div class="header-spacer">
+		<img src="img/LOGO - 150x150.png" alt="Blake Davies"/>
+		<h1>Blake Davies</h1>
 	</div>
 
 <!-- CAROUSEL -->
@@ -199,7 +217,7 @@
 		<h2>A Complete <br class="rwd-break"/>Website Solution</h2>
 		<p>Website design, coding & front end development, and included hosting.</p>
 		<div class="button">
-			<a href="#contact-anchor">Get Started Today!!</a>
+			<a href="#contact-anchor">Get Started Today</a>
 		</div>
 		<div class="carousel-buttons">
 			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Previous"/>
@@ -212,9 +230,9 @@
 
 	<div class="carousel-container carousel-2">
 		<h2>Responsive <br class="rwd-break"/>Web Design</h2>
-		<p>Beatiful, functional websites no matter the device they are viewed on.</p>
+		<p>Beautiful, functional websites no matter what device they are viewed on.</p>
 		<div class="button">
-			<a href="#contact-anchor">Get Started Today!!</a>
+			<a href="#contact-anchor">Get Started Today</a>
 		</div>
 		<div class="carousel-buttons">
 			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Previous"/>
@@ -226,10 +244,10 @@
 	</div>
 
 	<div class="carousel-container carousel-3">
-		<h2>Cross Browser<br class="rwd-break"/> Compatability</h2>
+		<h2>Cross Browser<br class="rwd-break"/> Compatibility</h2>
 		<p>Websites that perform across popular browsers & operating systems.</p>
 		<div class="button">
-			<a href="#contact-anchor">Get Started Today!!</a>
+			<a href="#contact-anchor">Get Started Today</a>
 		</div>
 		<div class="carousel-buttons">
 			<img src="img/arrow_icon_left_white.png" onclick="plusDivs(-1)" alt="Previous"/>
@@ -336,7 +354,7 @@
 		<div class="wrapper">
 			<img src="img/server_hosting.png" alt="Hosting & Support"/>
 			<h3>Hosting & Support</h3>
-			<p>Get your website live on the internet with included hosting and no requirement for a Domain Name. Enjoy the flexibility of ongoing support if you ever need to change or update your site later.</p>
+			<p>Get your website live on the internet with included hosting and no requirement for a Domain Name. Enjoy the flexibility of ongoing support if you ever need to change or update your site in the future.</p>
 		</div>
 	</div>
 
