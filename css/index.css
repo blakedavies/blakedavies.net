@@ -457,7 +457,20 @@
        -moz-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(75,77,79);
          -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(75,77,79);
         -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(75,77,79);
-            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(75,77,79);	
+            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(75,77,79);
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;	
+	}
+	#home form input.name:focus, #home form input.email:focus {
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);
+	  background-color:rgb(50,200,245);
 	}
 	#home form input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:rgb(105,105,105);
@@ -523,11 +536,29 @@
 	}
 	#about .services-container img {
 		height:auto;
-		width:100%;
+		width:50vmin;
 	}
 	#about .services-container .tick-container {
 		display:inline-block;
 		text-align:left;
+	}
+	#about .services-container .tick-container .tick-wrapper {
+  	background-color:rgba(25,27,29,0.45);
+  	padding:1.75vmin;
+    -webkit-border-radius:1vmin;
+       -moz-border-radius:1vmin;
+         -o-border-radius:1vmin;
+        -ms-border-radius:1vmin;
+            border-radius:1vmin;
+		border:0.25vmin solid rgb(255,255,255);
+	  -webkit-box-shadow:1vmin 1vmin 2.25vmin 0.35vmin rgb(25,27,29);
+       -moz-box-shadow:1vmin 1vmin 2.25vmin 0.35vmin rgb(25,27,29);
+         -o-box-shadow:1vmin 1vmin 2.25vmin 0.35vmin rgb(25,27,29);
+        -ms-box-shadow:1vmin 1vmin 2.25vmin 0.35vmin rgb(25,27,29);
+            box-shadow:1vmin 1vmin 2.25vmin 0.35vmin rgb(25,27,29);	
+	}
+	#about .services-container .tick-container .spacer {
+		height:5vmin;
 	}
 	#about .services-container .tick-container .tick-wrapper img {
 		height:auto;
@@ -690,6 +721,19 @@
          -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
         -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
             box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);	
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;	
+	}
+	#contact form input.name:focus, #contact form input.phone:focus, #contact form input.email:focus {
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);
+	  background-color:rgba(25,27,29,0.25);
 	}
 	#contact form textarea {
 		height:25vmin;
@@ -712,6 +756,19 @@
          -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
         -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
             box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);		
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;	
+	}
+	#contact form textarea:focus {
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);
+	  background-color:rgba(25,27,29,0.25);
 	}
 	#contact form input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:rgb(155,155,155);
@@ -840,10 +897,24 @@
 			display:block;
 		}
 	}
-
-
 	@media screen and (orientation:landscape) {
 		.rwd-break {
 			display:none;
 		}
+		#home .header-spacer h1, #home header h1 {
+			display:inline-block;
+		}
 	}
+
+	/*
+	@media only screen and (min-width: 500px) {
+			#home .header-spacer h1, #home header h1 {
+				font-size:5.5vmin;
+				letter-spacing:2vw;
+				padding-left:2vw;
+			}
+			#home .header-spacer img, #home header img {
+			 	width:12.5vmin;
+			}
+		}
+	*/
