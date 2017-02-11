@@ -695,6 +695,9 @@
 		font-size:5vmin;
 		margin-bottom:7.5vmin
 	}
+	#contact .contact-container img {
+		display:none;
+	}
 	#contact form {
 		margin-bottom:7.5vmin;
 		padding-left:10%;
@@ -892,19 +895,209 @@
 
 /* MEDIA QUERIES */
 
-	@media screen and (orientation:portrait) {
+	@media screen and (max-aspect-ratio: 5/4) {
 		.rwd-break {
 			display:block;
 		}
+		.hide-p {
+			display:none;
+		}
+		.hide-l {
+			display:block;
+		}
+	
 	}
-	@media screen and (orientation:landscape) {
+
+
+	@media screen and (min-aspect-ratio: 5/4) {
 		.rwd-break {
 			display:none;
+		}
+		.anchor {
+  		height:26vmin;
+  		margin-top:-26vmin;
 		}
 		#home .header-spacer h1, #home header h1 {
 			display:inline-block;
 		}
+		#home .section-break img {
+	  	vertical-align:6.5vmin;
+		}
+		#home form {
+			width:60%;
+			display:inline-block;
+			padding-right:0%;
+		}
+		#home h3.thank-you {
+		  font-size:6vmin;		
+	  }
+	  #home p.thank-you {
+		  font-size:4vmin;
+		}
+		#home .carousel-container h2 {
+		 	font-size:6vmin;
+		}
+		#home .carousel-container p {
+			font-size:4vmin;
+		}
+		#about .services-container .tick-container {
+			display:inline-block;
+			text-align:left;
+		}
+		#about .services-container .rwdspacer {
+		  width:49%;
+		  display:inline-block;
+	  }
+		#about .services-container .spacer.rwdspacer {
+		  width:2.15%;
+		  display:inline-block;
+	  }
+		#about .services-container .wrapper {
+			width:30%;
+			display:inline-block;
+			vertical-align:top;
+    	padding:1.75vmin;
+    }
+		.hide-p {
+			display:block;
+		}
+		.hide-l {
+			display:none;
+		}
+		#about .services-container .wrapper img {
+	  	width:25vmin;
+  	}
+  	#about .services-container .wrapper h3 {
+  		font-size:5vmin;
+  	}
+  	#about .services-container .wrapper p {
+  		font-size:3vmin;
+  	}
+  	#about .about-container img {
+		  height:32.5vmin;
+  	  width:32.5vmin;	
+	  }
+	  #about .about-container h3 {
+  		font-size:6vmin;
+  	}
+  	#about .about-container p {
+  		font-size:4vmin;
+  		padding-right:20%;
+  		padding-left:20%;
+    }
+    #contact .contact-container h3 {
+		  font-size:6vmin;		
+	  }
+	  #contact .contact-container p {
+	  	font-size:4vmin;
+	  	padding-right:20%;
+  		padding-left:20%;
+		}
+    #contact .contact-container form .rwd-form-break {
+			width:45%;
+			vertical-align:top;
+			display:inline-block;
+			margin-right:1.5%;
+			margin-left:1.5%; 
+		}
+		#contact form textarea {
+		  height:31.8vmin;
+		}
+		#contact h3.thank-you {
+		  font-size:6vmin;		
+	  }
+	  #contact p.thank-you {
+		  font-size:4vmin;
+		}	
+    #footer footer .spacer {
+    	display:inline-block;
+    	width:5%;
+    }
+
 	}
+
+
+	@media only screen and (min-width:500px) and (min-height:500px) and (min-aspect-ratio: 5/4) {
+
+		#about .services-container .tick-container .tick-wrapper img {
+		  width:3vmin;
+	  }
+	  #about .services-container .tick-container .tick-wrapper h3 {
+	  	vertical-align:0.75vmin;
+	  	font-size:2.75vmin;
+		}
+		#about .services-container .wrapper img {
+	  	width:17.5vmin;
+	  	margin-top:5vmin;
+  	}
+  	#about .services-container .wrapper h3 {
+  		font-size:4vmin;
+  	}
+  	#about .services-container .wrapper p {
+  		font-size:2.25vmin;
+  		margin-bottom:5vmin;
+  	}
+  	#home .carousel-container h2 {
+	  	font-size:7vmin;
+	  }
+	  #home .carousel-container p {
+	  	font-size:4.5vmin;
+	  }
+    #footer footer .container .wrapper img {
+			width:6vmin;		
+		}
+		#footer footer .container .wrapper h3 {
+			font-size:2.75vmin;
+		}
+	}
+
+
+	@media only screen and (min-width:500px) and (min-height:500px) {
+		#home header .menu-icon {
+		width:43.75px;
+		height:35px;
+		}
+		#home header .menu-icon span {
+			height:7px;
+		}
+		#home header .menu-icon span:nth-child(1) {
+			top:0;
+		}
+		#home header .menu-icon span:nth-child(2), #home header .menu-icon span:nth-child(3) {
+			top:14px;
+		}
+		#home header .menu-icon span:nth-child(4) {
+			top:28px;
+		}
+		#home header .menu-icon.open span:nth-child(1), #home .menu-icon.open span:nth-child(4) {
+			top:14px;
+		}
+
+	}
+
+	@media only screen and (min-width:800px) and (min-height:800px) {
+		#home header .menu-icon {
+		width:50px;
+		height:40px;
+		}
+		#home header .menu-icon span {
+			height:8px;
+		}
+		#home header .menu-icon span:nth-child(1) {
+			top:0;
+		}
+		#home header .menu-icon span:nth-child(2), #home header .menu-icon span:nth-child(3) {
+			top:16px;
+		}
+		#home header .menu-icon span:nth-child(4) {
+			top:32px;
+		}
+		#home header .menu-icon.open span:nth-child(1), #home .menu-icon.open span:nth-child(4) {
+			top:16px;
+		}
+
+	}
+
 
 	/*
 	@media only screen and (min-width: 500px) {
