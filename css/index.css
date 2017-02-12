@@ -685,6 +685,11 @@
 		width:27.5vmin;
 		margin-top:7.5vmin;
 	}
+	#about .services-container .wrapper img.larger {
+		height:auto;
+		width:30vmin;
+		margin-top:7.5vmin;
+	}
 	#about .services-container .wrapper h3 {
 		margin-top:2.5vmin;
 		margin-bottom:2.5vmin;
@@ -1082,6 +1087,9 @@
 		#about .services-container .wrapper img {
 	  	width:25vmin;
   	}
+  	#about .services-container .wrapper img.larger {
+	  	width:27.5vmin;
+  	}
   	#about .services-container .wrapper h3 {
   		font-size:5vmin;
   	}
@@ -1143,6 +1151,10 @@
 		}
 		#about .services-container .wrapper img {
 	  	width:17.5vmin;
+	  	margin-top:5vmin;
+  	}
+  	#about .services-container .wrapper img.larger {
+	  	width:26vmin;
 	  	margin-top:5vmin;
   	}
   	#about .services-container .wrapper h3 {
