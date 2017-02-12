@@ -286,7 +286,28 @@
          -o-border-radius:1vmin;
         -ms-border-radius:1vmin;
             border-radius:1vmin;
-		border:0.25vmin solid rgb(255,255,255);	
+		border:0.25vmin solid rgb(255,255,255);
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;
+	}
+	#home header nav a:hover {
+  	background-color:rgba(25,27,29,1);
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);			
+	}
+	html.can-touch #home header nav a:hover {
+  	background-color:transparent;
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
 	}
 
 /* CAROUSEL */
@@ -337,6 +358,25 @@
 		width:2.5vmin;
 		margin-right:5vmin;
 		margin-left:5vmin;
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;
+	}
+	#home .carousel-buttons img:hover {
+	  -webkit-transform: scale(1.15);
+	     -moz-transform: scale(1.15);
+	      -ms-transform: scale(1.15);
+	       -o-transform: scale(1.15);
+	          transform: scale(1.15);			
+	}
+	html.can-touch #home .carousel-buttons img:hover {
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
 	}
 	#home .carousel-container a {
 		font-family:'Quicksand'; 
@@ -356,8 +396,29 @@
        -moz-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
          -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
         -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
-            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);				
-	}	
+            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);	
+    -webkit-transition: all 0.15s ease;
+ 	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;			
+	}
+	#home .carousel-container a:hover {
+  	background-color:rgba(255,255,255,0.05);
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);			
+	}
+	html.can-touch #home .carousel-container a:hover {
+  	background-color:transparent;
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
+	}
 	#home .carousel-container.carousel-1 {
 		background-color:rgb(75,75,75);		
 		background-image: url("../img/laptop_coffee.jpeg");
@@ -379,6 +440,7 @@
 	}
 
 	#home .carousel-container.carousel-2 {
+		display:none;
 		background-color:rgb(75,75,75);	
 		background-image: url("../img/laptop_glasses_coffe.jpg");
 		background-position:10% 25%;
@@ -391,6 +453,7 @@
 	}	
 
 	#home .carousel-container.carousel-3 {
+		display:none;
 		background-color:rgb(75,75,75);	
 		background-image: url("../img/laptop_phone_plant.jpg");
 		background-position:50% 50%;
@@ -507,6 +570,27 @@
          -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(75,77,79);
         -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(75,77,79);
             box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(75,77,79);		
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;
+	}
+	#home form input.submit:hover {
+  	background-color:rgb(50,200,245);
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);			
+	}
+	html.can-touch #home form input.submit:hover {
+  	background-color:transparent;
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
 	}
 	#home h3.thank-you {
 		margin-top:7.5vmin;
@@ -533,6 +617,9 @@
 		background-image:url("../img/lodyas.png");
 		padding:12.5vmin;
 		text-align:center;
+	}
+	.chrome .services-container  {
+  	background-attachment:fixed;
 	}
 	#about .services-container img {
 		height:auto;
@@ -678,6 +765,9 @@
         -ms-box-shadow:0px -1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset;
             box-shadow:0px -1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset;
 	}
+	.chrome .contact-container  {
+  	background-attachment:fixed;
+	}
 	#contact .contact-container h3 {
 		margin-top:7.5vmin;
 		margin-bottom:2.5vmin;
@@ -822,6 +912,27 @@
          -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
         -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
             box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);	
+	  -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;
+	}
+	#contact form input.submit:hover {
+  	background-color:rgba(25,27,29,0.25);
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);			
+	}
+	html.can-touch #contact form input.submit:hover {
+  	background-color:transparent;
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
 	}
 	#contact h3.thank-you {
 		margin-top:7.5vmin;
@@ -894,6 +1005,10 @@
 	}
 
 /* MEDIA QUERIES */
+
+	.hide-l-p {
+		display:none;
+	}
 
 	@media screen and (max-aspect-ratio: 5/4) {
 		.rwd-break {
@@ -1097,6 +1212,21 @@
 		}
 
 	}
+
+	@media only screen and (min-width:1800px) {
+		.hide-l-p {
+			display:block;
+		}
+		#about .services-container .hide-p {
+			display:none;
+		}
+		#about .services-container .hide-l {
+			display:none;
+		}
+		#about .services-container .rwdspacer {
+		  width:30%;
+		  display:inline-block;
+	  }
 
 
 	/*
