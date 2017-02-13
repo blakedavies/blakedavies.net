@@ -689,7 +689,12 @@
 		height:auto;
 		width:30vmin;
 		margin-top:7.5vmin;
+  	margin-bottom:1vmin;
 	}
+	#about .services-container .wrapper img.smaller {
+	  	width:25vmin;
+	  	margin-top:6.5vmin;
+  	}
 	#about .services-container .wrapper h3 {
 		margin-top:2.5vmin;
 		margin-bottom:2.5vmin;
@@ -1073,11 +1078,14 @@
 		  display:inline-block;
 	  }
 		#about .services-container .wrapper {
-			width:30%;
+			width:45%;
 			display:inline-block;
 			vertical-align:top;
     	padding:1.75vmin;
     }
+    #about .services-container .spacer.spcr50 {
+			height:5vmin;
+		}
 		.hide-p {
 			display:block;
 		}
@@ -1089,6 +1097,12 @@
   	}
   	#about .services-container .wrapper img.larger {
 	  	width:27.5vmin;
+	  	margin-top:10vmin;
+	  	margin-bottom:2.5vmin;
+  	}
+  	#about .services-container .wrapper img.smaller {
+	  	width:22.5vmin;
+	  	margin-top:4vmin;
   	}
   	#about .services-container .wrapper h3 {
   		font-size:5vmin;
@@ -1154,8 +1168,13 @@
 	  	margin-top:5vmin;
   	}
   	#about .services-container .wrapper img.larger {
-	  	width:26vmin;
+	  	width:25vmin;
 	  	margin-top:5vmin;
+	  	margin-bottom:1vmin;
+  	}
+  	#about .services-container .wrapper img.smaller {
+	  	width:14vmin;
+	  	margin-top:4vmin;
   	}
   	#about .services-container .wrapper h3 {
   		font-size:4vmin;
@@ -1235,7 +1254,7 @@
 		#about .services-container .hide-l {
 			display:none;
 		}
-		#about .services-container .rwdspacer {
+		#about .services-container .hide-l-p .rwdspacer {
 		  width:30%;
 		  display:inline-block;
 	  }
