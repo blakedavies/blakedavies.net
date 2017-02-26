@@ -9,11 +9,7 @@
 	<meta charset="UTF-8"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	
-	<meta name="keywords" content="blake, davies, single page websites, website, websites, webpage, design, webdesign, graphic design, small business, business, hosting, web hosting, code, coding, html, html5, css, css3, developer, web developer, web development"/>
-	
-	<meta name="description" content="A complete website solution for your business. Single page websites with included hosting and no Domain Name required."/>
-	
+
 	<meta name="robots" content="index,follow,noodp"/>  
 	
 	<meta name="googlebot" content="index,follow"/> 
@@ -22,6 +18,10 @@
 	
 	<meta name="google" content="notranslate"/>
 	
+	<meta name="keywords" content="blake, davies, blake davies, blakedavies, single page websites, website, websites, webpage, design, webdesign, graphic design, small business, business, small business website, small business websites, hosting, web hosting, code, coding, html, html5, css, css3, developer, web developer, web development, brisbane, brisbane web design, brisbane web developer"/>
+	
+	<meta name="description" content="A complete website solution for your business. Single page websites with included hosting and no Domain Name required."/>
+
 	<meta name="subject" content="A complete website solution for your business. Single page websites with included hosting and no Domain Name required."/>  
 	
 	<meta name="abstract" content="A complete website solution for your business."/>
@@ -48,28 +48,31 @@
 	
 	<link rel="canonical" href="http://blakedavies.net"/>
 
-<!-- CSS STYLESHEETS -->
-	
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
-
 <!-- ICONS -->
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 	
 	<title>Blake Davies</title>
 
+<!-- CSS STYLESHEETS -->
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+
+
 <!-- JAVASCRIPT -->
 
 	<!-- Page Loader -->
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!--
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
   	<script type="text/javascript">
     	$(window).load(function() {
       	$(".loader").fadeOut("slow");
     	})
   	</script>
-	
+		-->
+		
 	<!-- Cross Browser Support -->
 		
 		<script src="js/crossbrowsersupport.js" type="text/javascript"></script>
@@ -186,11 +189,39 @@
   		});
   	</script>	
 
+  <!-- Carousel -->
+
+  	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+    	showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+    	var i;
+    	var x = document.getElementsByClassName("carousel-container");
+    	if (n > x.length) {slideIndex = 1} 
+    	if (n < 1) {slideIndex = x.length} ;
+    	for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    	}
+    	
+    	x[slideIndex-1].style.display = "block";
+			}
+		</script>
+
 </head>
 
 <body class="no-touch">
 
-<div class="loader"></div>
+<!-- PAGE LOADER -->
+
+	<!-- 
+	<div class="loader">
+	</div>
+	-->
 
 <section id="home">
 
@@ -268,30 +299,9 @@
 		</div>
 	</div>	
 
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
-    	showDivs(slideIndex += n);
-		}
-
-		function showDivs(n) {
-    	var i;
-    	var x = document.getElementsByClassName("carousel-container");
-    	if (n > x.length) {slideIndex = 1} 
-    	if (n < 1) {slideIndex = x.length} ;
-    	for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    	}
-    	
-    	x[slideIndex-1].style.display = "block";
-		}
-	</script>
-
 <!-- SUBSCRIBE -->
 
-	<div class="section-break">
+	<div class="subscribe">
 		<img src="img/envelope.png" alt="Single Page Websites"/>
 		<form name="gform2" id="gform2" enctype="text/plain" action="https://docs.google.com/forms/d/1eIr7nnUwdUKegIcJMEWf2RaUWmlrCp3LIvI6R3kswZo/formResponse">
     	<input class="name" name="entry.115064419" id="entry.115064419" placeholder="Name" required>
@@ -679,12 +689,12 @@
 			</div>
 		</div>
 
-		<div>
-			<a href="#home">
-				<img src="img/LOGO - 150x150.png" alt="Blake Davies"/>
-				<h1>Blake Davies</h1>
-			</a>
-		</div>
+
+		<a href="#home">
+			<img src="img/LOGO - 150x150.png" alt="Blake Davies"/>
+			<h1>Blake Davies</h1>
+		</a>
+
 	
 		<p>&#169 2017 Blake Davies. All Rights Reserved.</p>
 
