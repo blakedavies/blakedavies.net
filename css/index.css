@@ -27,6 +27,15 @@
   	     url('../fonts/Quicksand/Quicksand-Regular.ttf')  format('truetype'),
   	     url('../fonts/Quicksand/Quicksand-Regular.svg#svgFontName') format('svg');
 	}
+	@font-face {
+	  font-family:'Artifika';
+	  src: url('../fonts/Artifika/Artifika-Regular.eot'); /* IE9 Compat Modes */
+	  src: url('../fonts/Artifika/Artifika-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       url('../fonts/Artifika/Artifika-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('../fonts/Artifika/Artifika-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+	       url('../fonts/Artifika/Artifika-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+	       url('../fonts/Artifika/Artifika-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+	}
 
 /* STANDARD CSS */
 
@@ -56,6 +65,136 @@
   		height:13vmin;
   		margin-top:-13vmin;
   		visibility:hidden;
+	}
+	.come-in {
+    
+	}
+	.hidden {
+		opacity:0;
+	}
+	.visible {
+		opacity:1;
+	}
+	.top-10 {
+		position:relative;
+		-webkit-transform:translateY(-10vmin);
+	     -moz-transform:translateY(-10vmin);
+	      -ms-transform:translateY(-10vmin);
+	       -o-transform:translateY(-10vmin);
+	          transform:translateY(-10vmin);
+	}
+	.top-50 {
+		position:relative;
+		-webkit-transform:translateY(-50vmin);
+	     -moz-transform:translateY(-50vmin);
+	      -ms-transform:translateY(-50vmin);
+	       -o-transform:translateY(-50vmin);
+	          transform:translateY(-50vmin);
+	}
+	.top-100 {
+		position:relative;
+		-webkit-transform:translateY(-100vmin);
+	     -moz-transform:translateY(-100vmin);
+	      -ms-transform:translateY(-100vmin);
+	       -o-transform:translateY(-100vmin);
+	          transform:translateY(-100vmin);
+	}
+	.left-10 {
+		position:relative;
+		-webkit-transform:translateX(-10vmin);
+	     -moz-transform:translateX(-10vmin);
+	      -ms-transform:translateX(-10vmin);
+	       -o-transform:translateX(-10vmin);
+	          transform:translateX(-10vmin);
+	}
+	.left-50 {
+		position:relative;
+		-webkit-transform:translateX(-50vmin);
+	     -moz-transform:translateX(-50vmin);
+	      -ms-transform:translateX(-50vmin);
+	       -o-transform:translateX(-50vmin);
+	          transform:translateX(-50vmin);
+	}
+	.left-100 {
+		position:relative;
+		-webkit-transform:translateX(-100vmin);
+	     -moz-transform:translateX(-100vmin);
+	      -ms-transform:translateX(-100vmin);
+	       -o-transform:translateX(-100vmin);
+	          transform:translateX(-100vmin);
+	}
+	.middle {
+		-webkit-transition:all 1.5s ease;
+		   -moz-transition:all 1.5s ease;
+		     -o-transition:all 1.5s ease;
+		    -ms-transition:all 1.5s ease;
+		        transition:all 1.5s ease;	
+  	position:relative;
+  	-webkit-transform:translateX(0);
+	     -moz-transform:translateX(0);
+	      -ms-transform:translateX(0);
+	       -o-transform:translateX(0);
+	          transform:translateX(0);
+  	-webkit-transform:translateY(0);
+	     -moz-transform:translateY(0);
+	      -ms-transform:translateY(0);
+	       -o-transform:translateY(0);
+	          transform:translateY(0);
+  }
+  .bottom-10 {
+		position:relative;
+		-webkit-transform:translateY(10vmin);
+	     -moz-transform:translateY(10vmin);
+	      -ms-transform:translateY(10vmin);
+	       -o-transform:translateY(10vmin);
+	          transform:translateY(10vmin);
+	}
+	.bottom-50 {
+		position:relative;
+		-webkit-transform:translateY(50vmin);
+	     -moz-transform:translateY(50vmin);
+	      -ms-transform:translateY(50vmin);
+	       -o-transform:translateY(50vmin);
+	          transform:translateY(50vmin);
+	}
+	.bottom-100 {
+		position:relative;
+		-webkit-transform:translateY(100vmin);
+	     -moz-transform:translateY(100vmin);
+	      -ms-transform:translateY(100vmin);
+	       -o-transform:translateY(100vmin);
+	          transform:translateY(100vmin);
+	}
+	.right-10 {
+		position:relative;
+		-webkit-transform:translateX(10vmin);
+	     -moz-transform:translateX(10vmin);
+	      -ms-transform:translateX(10vmin);
+	       -o-transform:translateX(10vmin);
+	          transform:translateX(10vmin);
+	}
+	.right-50 {
+		position:relative;
+		-webkit-transform:translateX(50vmin);
+	     -moz-transform:translateX(50vmin);
+	      -ms-transform:translateX(50vmin);
+	       -o-transform:translateX(50vmin);
+	          transform:translateX(50vmin);
+	}
+	.right-100 {
+		position:relative;
+		-webkit-transform:translateX(100vmin);
+	     -moz-transform:translateX(100vmin);
+	      -ms-transform:translateX(100vmin);
+	       -o-transform:translateX(100vmin);
+	          transform:translateX(100vmin);
+	}
+	.grow-1-1 {
+		-webkit-transform: scale(0.9);  
+       -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
 	}
 
 /* PAGE LOADER */
@@ -298,7 +437,8 @@
 	          transition:all 0.15s ease;
 	}
 	#home header div.hidden-container nav a:hover {
-  	background-color:rgba(25,27,29,1);
+  	background-color:rgba(255,255,255,0.9);
+  	color:rgb(25,27,29);
 	  -webkit-transform:scale(1.05);
 	     -moz-transform:scale(1.05);
 	      -ms-transform:scale(1.05);
@@ -307,6 +447,7 @@
 	}
 	html.can-touch #home header div.hidden-container nav a:hover {
   	background-color:transparent;
+  	color:rgb(255,255,255);
 	  -webkit-transform:scale(1);
 	     -moz-transform:scale(1);
 	      -ms-transform:scale(1);
@@ -316,7 +457,7 @@
 
 /* CAROUSEL */
 
-	#home div.carousel-container {
+	#home div.slideshow div.carousel-container {
 		padding:5vmin;
 		-webkit-background-size:cover;
 	     -moz-background-size:cover;
@@ -324,19 +465,19 @@
   	    -ms-background-size:cover;
    	        background-size:cover;
 	}
-	#home div.carousel-container h2 {
+	#home div.slideshow div.carousel-container h2 {
 		font-family:'Quicksand';
 		font-weight:300;
 		font-size:7.5vmin;
 		color:rgb(255,255,255);
 	}
-	#home div.carousel-container p {
+	#home div.slideshow div.carousel-container p {
 		font-family:'Quicksand';
 		font-weight:100;
 		font-size:5vmin;
 		color:rgb(255,255,255);
 	}
-	#home div.carousel-container a {
+	#home div.slideshow div.carousel-container a {
 		font-family:'Quicksand'; 
   	font-size:3vmin;
   	background-color:transparent;
@@ -361,27 +502,29 @@
 	      -ms-transition: all 0.15s ease;
 	          transition: all 0.15s ease;			
 	}
-	#home div.carousel-container a:hover {
-  	background-color:rgba(255,255,255,0.05);
+	#home div.slideshow div.carousel-container a:hover {
+  	background-color:rgba(255,255,255,0.9);
+  	color:rgb(25,27,29);
 	  -webkit-transform: scale(1.05);
 	     -moz-transform: scale(1.05);
 	      -ms-transform: scale(1.05);
 	       -o-transform: scale(1.05);
 	          transform: scale(1.05);			
 	}
-	html.can-touch #home div.carousel-container a:hover {
+	html.can-touch #home div.slideshow div.carousel-container a:hover {
   	background-color:transparent;
+  	color:rgb(255,255,255);
 	  -webkit-transform: scale(1);
 	     -moz-transform: scale(1);
 	      -ms-transform: scale(1);
 	       -o-transform: scale(1);
 	          transform: scale(1);			
 	}
-	#home div.carousel-container div.carousel-buttons {
+	#home div.slideshow div.carousel-container div.carousel-buttons {
 		text-align:center;
 		margin-top:12.5vmin;
 	}
-	#home div.carousel-container div.carousel-buttons span {
+	#home div.slideshow div.carousel-container div.carousel-buttons span {
 		display:inline-block;
 		height:2.5vmin;
 		width:2.5vmin;
@@ -396,7 +539,7 @@
     	  -ms-border-radius:50%;
     	      border-radius:50%;
 	}
-	#home div.carousel-container div.carousel-buttons img {
+	#home div.slideshow div.carousel-container div.carousel-buttons img {
 		cursor:pointer;
 		display:inline-block;
 		height:auto;
@@ -409,76 +552,76 @@
 	      -ms-transition: all 0.15s ease;
 	          transition: all 0.15s ease;
 	}
-	#home div.carousel-container div.carousel-buttons img:hover {
+	#home div.slideshow div.carousel-container div.carousel-buttons img:hover {
 	  -webkit-transform: scale(1.15);
 	     -moz-transform: scale(1.15);
 	      -ms-transform: scale(1.15);
 	       -o-transform: scale(1.15);
 	          transform: scale(1.15);			
 	}
-	html.can-touch #home div.carousel-container div.carousel-buttons img:hover {
+	html.can-touch #home div.slideshow div.carousel-container div.carousel-buttons img:hover {
 	  -webkit-transform: scale(1);
 	     -moz-transform: scale(1);
 	      -ms-transform: scale(1);
 	       -o-transform: scale(1);
 	          transform: scale(1);			
 	}
-	#home div.carousel-container.carousel-1 {
+	#home div.slideshow div.carousel-container.carousel-1 {
 		background-color:rgb(75,75,75);		
 		background-image: url("../img/laptop_coffee.jpeg");
 		background-position:10% 25%;	
 	}
-	#home div.carousel-container.carousel-1 h2 {
+	#home div.slideshow div.carousel-container.carousel-1 h2 {
 		text-align:center;
 	}
-	#home div.carousel-container.carousel-1 p {
+	#home div.slideshow div.carousel-container.carousel-1 p {
 		padding-left:20%;
 		padding-right:20%;
 		text-align:center;
 	}
-	#home div.carousel-container.carousel-1 div.button {
+	#home div.slideshow div.carousel-container.carousel-1 div.button {
 		text-align:center;
 	}
-	#home div.carousel-container.carousel-1 div.carousel-buttons span:nth-child(2) {
+	#home div.slideshow div.carousel-container.carousel-1 div.carousel-buttons span:nth-child(2) {
 		background-color:rgba(255,255,255,1);
 	}
 
-	#home div.carousel-container.carousel-2 {
+	#home div.slideshow div.carousel-container.carousel-2 {
 		display:none;
 		background-color:rgb(75,75,75);	
 		background-image: url("../img/laptop_glasses_coffe.jpg");
 		background-position:10% 25%;
 	}
-	#home div.carousel-container.carousel-2 p {
+	#home div.slideshow div.carousel-container.carousel-2 p {
 		width:60%;
 	}
-	#home div.carousel-container.carousel-2 div.carousel-buttons span:nth-child(3) {
+	#home div.slideshow div.carousel-container.carousel-2 div.carousel-buttons span:nth-child(3) {
 		background-color:rgba(255,255,255,1);
 	}	
 
-	#home div.carousel-container.carousel-3 {
+	#home div.slideshow div.carousel-container.carousel-3 {
 		display:none;
 		background-color:rgb(75,75,75);	
 		background-image: url("../img/laptop_phone_plant.jpg");
 		background-position:50% 50%;
 	}
-	#home div.carousel-container.carousel-3 h2 {
+	#home div.slideshow div.carousel-container.carousel-3 h2 {
 		text-align:right;
 	}
-	#home div.carousel-container.carousel-3 p {
+	#home div.slideshow div.carousel-container.carousel-3 p {
 		padding-left:40%;
 		text-align:right;
 	}
-	#home div.carousel-container.carousel-3 div.button {
+	#home div.slideshow div.carousel-container.carousel-3 div.button {
 		text-align:right;
 	}
-	#home div.carousel-container.carousel-3 div.carousel-buttons span:nth-child(4) {
+	#home div.slideshow div.carousel-container.carousel-3 div.carousel-buttons span:nth-child(4) {
 		background-color:rgba(255,255,255,1);
 	}	
 
 /* SUBSCRIBE */
 
-	#home div.subscribe {
+	#latest-news div.subscribe {
 		background-color:rgb(63,218,255);
 		padding:5vmin;
 		text-align:center;
@@ -493,19 +636,19 @@
             box-shadow:0px 1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset,
 	  									 0px -1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset;
 	}
-	#home div.subscribe img {
+	#latest-news div.subscribe img {
 		height:auto;
 		width:22.5vmin;
 		margin-top:5vmin;
 	}
-	#home div.subscribe form {
+	#latest-news div.subscribe form {
 		margin-top:7.5vmin;
 		margin-bottom:7.5vmin;
 		padding-left:10%;
 		padding-right:10%;
 	}
-	#home div.subscribe form input.name, 
-	#home div.subscribe form input.email {
+	#latest-news div.subscribe form input.name, 
+	#latest-news div.subscribe form input.email {
 		margin-bottom:2.5vmin;
 		width:100%;
 		font-family:'Quicksand'; 
@@ -532,30 +675,30 @@
 	      -ms-transition: all 0.15s ease;
 	          transition: all 0.15s ease;	
 	}
-	#home div.subscribe form input.name:focus, 
-	#home div.subscribe form input.email:focus {
+	#latest-news div.subscribe form input.name:focus, 
+	#latest-news div.subscribe form input.email:focus {
 	  -webkit-transform: scale(1.05);
 	     -moz-transform: scale(1.05);
 	      -ms-transform: scale(1.05);
 	       -o-transform: scale(1.05);
 	          transform: scale(1.05);
-	  background-color:rgb(50,200,245);
+	  background-color:rgba(25,27,29,0.1);	
 	}
-	#home div.subscribe form input::-webkit-input-placeholder {
+	#latest-news div.subscribe form input::-webkit-input-placeholder {
     color:rgb(105,105,105);
 	}
-	#home div.subscribe form input:-moz-placeholder {
-    color:rgb(105,105,105);
-    opacity:  1;
-	}
-	#home div.subscribe form input::-moz-placeholder {
+	#latest-news div.subscribe form input:-moz-placeholder {
     color:rgb(105,105,105);
     opacity:  1;
 	}
-	#home div.subscribe form input:-ms-input-placeholder {
+	#latest-news div.subscribe form input::-moz-placeholder {
+    color:rgb(105,105,105);
+    opacity:  1;
+	}
+	#latest-news div.subscribe form input:-ms-input-placeholder {
     color:rgb(105,105,105);
 	}
-	#home div.subscribe form input.submit {
+	#latest-news div.subscribe form input.submit {
 		margin-top:5vmin;
 		cursor:pointer;
 		font-family:'Quicksand'; 
@@ -582,15 +725,16 @@
 	      -ms-transition: all 0.15s ease;
 	          transition: all 0.15s ease;
 	}
-	#home div.subscribe form input.submit:hover {
-  	background-color:rgb(50,200,245);
+	#latest-news div.subscribe form input.submit:hover {
+  	background-color:rgba(25,27,29,0.9);	
+	  color:rgb(63,218,255);
 	  -webkit-transform: scale(1.05);
 	     -moz-transform: scale(1.05);
 	      -ms-transform: scale(1.05);
 	       -o-transform: scale(1.05);
 	          transform: scale(1.05);			
 	}
-	html.can-touch #home div.subscribe form input.submit:hover {
+	html.can-touch #latest-news div.subscribe form input.submit:hover {
   	background-color:transparent;
 	  -webkit-transform: scale(1);
 	     -moz-transform: scale(1);
@@ -598,7 +742,7 @@
 	       -o-transform: scale(1);
 	          transform: scale(1);			
 	}
-	#home div.subscribe h3.thank-you {
+	#latest-news div.subscribe h3.thank-you {
 		margin-top:7.5vmin;
 		margin-bottom:2.5vmin;
 		font-family:'Quicksand';
@@ -606,7 +750,7 @@
 		font-weight:300;
 		font-size:7.5vmin;		
 	}
-	#home div.subscribe p.thank-you {
+	#latest-news div.subscribe p.thank-you {
 		padding-left:10%;
 		padding-right:10%;
 		font-family:'Quicksand';
@@ -936,7 +1080,8 @@
 	          transition: all 0.15s ease;
 	}
 	#contact div.contact-container form input.submit:hover {
-  	background-color:rgba(25,27,29,0.25);
+  	background-color:rgba(255,255,255,0.9);
+  	color:rgb(25,27,29);
 	  -webkit-transform: scale(1.05);
 	     -moz-transform: scale(1.05);
 	      -ms-transform: scale(1.05);
@@ -945,6 +1090,7 @@
 	}
 	html.can-touch #contact div.contact-container form input.submit:hover {
   	background-color:transparent;
+  	color:rgb(255,255,255);
 	  -webkit-transform: scale(1);
 	     -moz-transform: scale(1);
 	      -ms-transform: scale(1);
@@ -968,6 +1114,74 @@
 		font-size:5vmin;
 		margin-bottom:7.5vmin
 	}	
+
+/* GALLERY */
+
+	#gallery div.container {
+		padding:5vmin;
+		padding-top:10vmin;
+		padding-bottom:10vmin;
+		text-align:center;
+		background-color:rgb(63,218,255);
+	  -webkit-box-shadow:0px -1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset;
+       -moz-box-shadow:0px -1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset;
+         -o-box-shadow:0px -1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset;
+        -ms-box-shadow:0px -1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset;
+            box-shadow:0px -1vmin 1.25vmin -0.5vmin rgb(25,27,29) inset;
+	}
+	#gallery div.container h3 {
+		margin:0;
+		font-family:'Quicksand';
+		color:rgb(25,27,29);
+		font-weight:300;
+		font-size:7.5vmin;	
+	}
+	#gallery div.container a div.wrapper {
+		margin-top:5vmin;
+		padding:5vmin;
+		display:inline-block;
+		background-color:rgb(80,40,65);
+		border:0.25vmin solid rgb(255,255,255);
+		-webkit-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
+       -moz-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
+         -o-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
+        -ms-box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);
+            box-shadow:0.5vmin 0.5vmin 1.75vmin 0.15vmin rgb(25,27,29);	
+    -webkit-border-radius:1vmin;
+       -moz-border-radius:1vmin;
+         -o-border-radius:1vmin;
+        -ms-border-radius:1vmin;
+            border-radius:1vmin;
+    -webkit-transition: all 0.15s ease;
+	     -moz-transition: all 0.15s ease;
+	       -o-transition: all 0.15s ease;
+	      -ms-transition: all 0.15s ease;
+	          transition: all 0.15s ease;	
+	}
+	#gallery div.container a div.wrapper:hover {
+	  -webkit-transform: scale(1.05);
+	     -moz-transform: scale(1.05);
+	      -ms-transform: scale(1.05);
+	       -o-transform: scale(1.05);
+	          transform: scale(1.05);			
+	}
+	html.can-touch #gallery div.container a div.wrapper:hover {
+	  -webkit-transform: scale(1);
+	     -moz-transform: scale(1);
+	      -ms-transform: scale(1);
+	       -o-transform: scale(1);
+	          transform: scale(1);			
+	}
+	#gallery div.container a div.wrapper h3 {
+		font-family:'Artifika';
+		color:rgb(240,140,200);
+		font-size:5vmin;
+	}
+	#gallery div.container a div.wrapper h3 span {
+		font-size:7.5vmin;
+		letter-spacing:2.5vmin;
+		padding-left:2.5vmin;	
+	}
 
 /* FOOTER */
 
@@ -1053,24 +1267,24 @@
 		#home header h1 {
 			display:inline-block;
 		}
-		#home div.subscribe img {
+		#latest-news div.subscribe img {
 	  	vertical-align:6.5vmin;
 		}
-		#home div.subscribe form {
+		#latest-news div.subscribe form {
 			width:60%;
 			display:inline-block;
 			padding-right:0%;
 		}
-		#home div.subscribe h3.thank-you {
+		#latest-news div.subscribe h3.thank-you {
 		  font-size:6vmin;		
 	  }
-	  #home div.subscribe p.thank-you {
+	  #latest-news div.subscribe p.thank-you {
 		  font-size:4vmin;
 		}
-		#home div.carousel-container h2 {
+		#home div.slideshow div.carousel-container h2 {
 		 	font-size:6vmin;
 		}
-		#home div.carousel-container p {
+		#home div.slideshow div.carousel-container p {
 			font-size:4vmin;
 		}
 		#about div.services-container div.tick-container {
@@ -1153,7 +1367,10 @@
 	  }
 	  #contact div.contact-container p.thank-you {
 		  font-size:4vmin;
-		}	
+		}
+		#gallery div.container h3 {
+			font-size:6vmin;
+		}
     #footer footer .spacer {
     	display:inline-block;
     	width:5%;
@@ -1176,7 +1393,7 @@
 	  	margin-top:5vmin;
   	}
   	#about div.services-container div.wrapper img.larger {
-	  	width:25vmin;
+	  	width:23vmin;
 	  	margin-top:5vmin;
 	  	margin-bottom:1vmin;
   	}
@@ -1191,10 +1408,10 @@
   		font-size:2.25vmin;
   		margin-bottom:5vmin;
   	}
-  	#home div.carousel-container h2 {
+  	#home div.slideshow div.carousel-container h2 {
 	  	font-size:7vmin;
 	  }
-	  #home div.carousel-container p {
+	  #home div.slideshow div.carousel-container p {
 	  	font-size:4.5vmin;
 	  }
     #footer footer div.container div.wrapper img {
@@ -1257,7 +1474,7 @@
 	}
 
 	@media only screen and (min-width:1800px) {
-		.hide-l-p {
+		div.hide-l-p {
 			display:block;
 		}
 		#about div.services-container div.hide-p {
@@ -1270,3 +1487,7 @@
 		  width:30%;
 		  display:inline-block;
 	  }
+	  #gallery div.container h3 br {
+			display:none;
+		}
+	}
