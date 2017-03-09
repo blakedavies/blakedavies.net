@@ -46,6 +46,9 @@
     	  -ms-box-sizing:border-box;
       	    box-sizing:border-box;
 	}
+	html {
+		overflow-x:hidden;
+	}
 	body {
 	  overflow-x:hidden;
 	  margin:0;
