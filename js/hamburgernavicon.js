@@ -1,0 +1,1 @@
+$(document).ready(function(){$('#home header .menu-icon').click(function(){$(this).toggleClass('open');});});
