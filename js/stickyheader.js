@@ -1,0 +1,1 @@
+$(window).scroll(function(){if($(window).scrollTop()>=$('#home div.layer div.box').position().top-74){$("#home div.layer header").addClass("sticky");}else{$("#home div.layer header").removeClass("sticky");}});
