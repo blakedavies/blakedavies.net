@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#home header nav").hide();$("#home header .menu-icon").show();$("#home header .menu-icon").click(function(){$("#home header nav").toggle("slide");});$("a").click(function(){$("#home header nav").hide("slide");$('#home header .menu-icon').removeClass('open');});});
