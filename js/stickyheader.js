@@ -1,1 +1,1 @@
-$(window).scroll(function(){if($(window).scrollTop()>=$('#home div.layer div.box').position().top-74){$("#home div.layer header").addClass("sticky");}else{$("#home div.layer header").removeClass("sticky");}});
+$(window).scroll(function(){if($(window).scrollTop()>=$('#home div.parallax-window div.box').position().top-74){$("#home div.parallax-window header").addClass("sticky");}else{$("#home div.parallax-window header").removeClass("sticky");}});
