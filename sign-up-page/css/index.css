@@ -1,1 +1,477 @@
-@font-face{font-family:'Bebas';src:url('../../fonts/Bebas/Bebas.eot');src:url('../../fonts/Bebas/Bebas.eot?#iefix') format('embedded-opentype'), url('../../fonts/Bebas/Bebas.woff2') format('woff2'), url('../../fonts/Bebas/Bebas.woff') format('woff'), url('../../fonts/Bebas/Bebas.ttf') format('truetype'), url('../../fonts/Bebas/Bebas.svg#svgFontName') format('svg')}@font-face{font-family:'Quicksand';src:url('../../fonts/Quicksand/Quicksand-Regular.eot');src:url('../../fonts/Quicksand/Quicksand-Regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/Quicksand/Quicksand-Regular.woff2') format('woff2'), url('../../fonts/Quicksand/Quicksand-Regular.woff') format('woff'), url('../../fonts/Quicksand/Quicksand-Regular.ttf') format('truetype'), url('../../fonts/Quicksand/Quicksand-Regular.svg#svgFontName') format('svg')}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;-webkit-backface-visibility:hidden;-webkit-transition:none}html{overflow-x:hidden}body{overflow-x:hidden;margin:0;padding:0}a{text-decoration:none}span.anchor{display:block;height:73px;margin-top:-73px;visibility:hidden}div.loader{-webkit-position:fixed;-moz-position:fixed;-o-position:fixed;-ms-position:fixed;position:fixed;top:0px;left:0px;width:100%;height:100%;-webkit-z-index:9999;-moz-z-index:9999;-o-z-index:9999;-ms-z-index:9999;z-index:9999;background:url('../../img/loading_icon_gears.gif') 50% 50% no-repeat rgb(255,255,255)}#home div.layer{background-color:rgb(255,255,255)}#home div.layer header{background-color:rgb(255,255,255);box-shadow:0px 0px 5px 1px rgb(25,27,29);-webkit-position:fixed;-moz-position:fixed;-o-position:fixed;-ms-position:fixed;position:fixed;width:100%;padding:15px;-webkit-z-index:9997;-moz-z-index:9997;-o-z-index:9997;-ms-z-index:9997;z-index:9997;-webkit-transition:background-color 0.5s linear, box-shadow 0.5s linear;-moz-transition:background-color 0.5s linear, box-shadow 0.5s linear;-o-transition:background-color 0.5s linear, box-shadow 0.5s linear;-ms-transition:background-color 0.5s linear, box-shadow 0.5s linear;transition:background-color 0.5s linear, box-shadow 0.5s linear}#home div.layer header div.container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;position:relative}#home div.layer header div.container a img{width:40px;height:auto}#home div.layer header div.container a h1{display:inline;font-family:'Bebas';color:rgb(25,27,29);font-size:20px;letter-spacing:5px;padding-left:5px}#home div.layer header div.container div.inner{position:absolute;right:1px;bottom:-12.5px}#home div.layer header div.container div.inner h2{font-family:'Quicksand';text-align:right;color:rgb(63,218,255);font-size:15px;font-weight:800;-webkit-transition:color 0.25s linear;-moz-transition:color 0.25s linear;-o-transition:color 0.25s linear;-ms-transition:color 0.25s linear;transition:color 0.25s linear}#contact div.layer{background-image:url("../../img/manhattan_skyline.jpg");-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;-ms-background-size:cover;background-size:cover;background-position:50% 0%;padding-top:73px}#contact div.layer div.container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;position:relative;text-align:center;padding:15px;padding-top:30px;padding-bottom:30px}#contact div.layer div.container div.wrapper{width:100%}#contact div.layer div.container div.wrapper div.box{width:100%;display:inline-block;vertical-align:middle}#contact div.layer div.container div.wrapper div.box form div.inner{width:100%;display:inline-block;vertical-align:middle;padding:5px;font-size:0}#contact div.layer div.container div.wrapper div.box form div.inner input{margin-bottom:5px;padding:15px;width:100%;font-family:'Quicksand';font-size:18px;font-weight:800;background-color:rgb(63,218,255);color:rgb(25,27,29);text-decoration:none;display:inline-block;border:2px solid rgb(255,255,255);-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;-ms-border-radius:5px;border-radius:5px}#contact div.layer div.container div.wrapper div.box form div.inner input.bump{margin-bottom:5px}#contact div.layer div.container div.wrapper div.box form div.inner input.bump2{margin-bottom:30px}#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(6), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(7), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(17), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(18){width:50%}#contact div.layer div.container div.wrapper div.box form div.inner textarea{height:175px;margin-bottom:5px;padding:15px;width:100%;font-family:'Quicksand';font-size:18px;font-weight:800;background-color:rgb(63,218,255);color:rgb(25,27,29);text-decoration:none;display:inline-block;border:2px solid rgb(255,255,255);-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;-ms-border-radius:5px;border-radius:5px}#contact div.layer div.container div.wrapper div.box form div.inner textarea.bump{margin-bottom:5px}#contact div.layer div.container div.wrapper div.box form div.inner textarea.bump2{margin-bottom:30px}#contact div.layer div.container div.wrapper div.box form div.inner input::-webkit-input-placeholder{color:rgba(25,27,29,0.25)}#contact div.layer div.container div.wrapper div.box form div.inner input:-moz-placeholder{color:rgba(25,27,29,0.25);opacity:1}#contact div.layer div.container div.wrapper div.box form div.inner input::-moz-placeholder{color:rgba(25,27,29,0.25);opacity:1}#contact div.layer div.container div.wrapper div.box form div.inner input:-ms-input-placeholder{color:rgba(25,27,29,0.25)}#contact div.layer div.container div.wrapper div.box form div.inner textarea::-webkit-input-placeholder{color:rgba(25,27,29,0.25)}#contact div.layer div.container div.wrapper div.box form div.inner textarea:-moz-placeholder{color:rgba(25,27,29,0.25);opacity:1}#contact div.layer div.container div.wrapper div.box form div.inner textarea::-moz-placeholder{color:rgba(25,27,29,0.25);opacity:1}#contact div.layer div.container div.wrapper div.box form div.inner textarea:-ms-input-placeholder{color:rgba(25,27,29,0.25)}#contact div.layer div.container div.wrapper div.box form input.submit{cursor:pointer;padding:15px;font-family:'Quicksand';font-size:18px;font-weight:800;margin-top:15px;margin-bottom:15px;background-color:rgb(255,255,255);color:rgb(25,27,29);text-decoration:none;display:inline-block;border:2px solid rgb(25,27,29);-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;-ms-border-radius:5px;border-radius:5px;-webkit-transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;-moz-transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;-o-transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;-ms-transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear}#contact div.layer div.container div.wrapper div.box form input.submit:hover{background-color:rgb(25,27,29);color:rgb(255,255,255);border:2px solid rgb(255,255,255)}html.can-touch #contact div.layer div.container div.wrapper div.box form input.submit:hover{background-color:rgb(255,255,255);color:rgb(25,27,29);border:2px solid rgb(25,27,29)}#contact div.layer div.container div.wrapper div.box div.thank-you-box{min-height:70vh;display:flex;flex-direction:column;justify-content:center}#contact div.layer div.container div.wrapper div.box div.thank-you-box div.inner{margin:25px;padding:5px;background-color:rgb(255,255,255);border:2px solid rgb(255,255,255);-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;-ms-border-radius:5px;border-radius:5px}#contact div.layer div.container div.wrapper div.box div.thank-you-box h3.thank-you{font-family:'Quicksand';font-size:30px;font-weight:800;color:rgb(25,27,29)}#contact div.layer div.container div.wrapper div.box div.thank-you-box p.thank-you{font-family:'Quicksand';font-size:20px;font-weight:400;color:rgb(25,27,29)}#footer footer div.layer{background-color:rgb(255,255,255)}#footer footer div.layer div.container{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;position:relative;text-align:center;padding:15px}#footer footer div.layer div.container div.wrapper{width:100%;padding:5px;text-align:center}#footer footer div.layer div.container div.wrapper.desktop-display{display:none}#footer footer div.layer div.container div.wrapper div.box{display:inline-block;text-align:left;padding:5px}#footer footer div.layer div.container div.wrapper div.box div.inner{padding:5px}#footer footer div.container div.wrapper div.box div.inner img{width:30px;height:auto}#footer footer div.layer div.container div.wrapper div.box div.inner p{display:inline;font-family:'Quicksand';color:rgb(25,27,29);font-size:15px;font-weight:800;vertical-align:9px;padding-left:5px}#footer footer div.layer div.container div.wrapper div.box div.inner p a{color:rgb(25,27,29);text-decoration:underline}#footer footer a div.layer.powered-by{background-color:rgb(255,255,255)}#footer footer a div.layer div.container.powered-by{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;position:relative;text-align:center;padding:15px}#footer footer a div.layer div.container.powered-by p{font-family:'Quicksand';color:rgb(25,27,29);font-size:15px;margin-top:0;margin-bottom:5px}#footer footer a div.layer div.container.powered-by img{width:30px;height:auto;margin:0}#footer footer a div.layer div.container.powered-by p:nth-child(3){display:inline;font-family:'Bebas';color:rgb(25,27,29);font-size:15px;font-weight:800;letter-spacing:3.75px;padding-left:3.75px}#footer footer a div.layer div.container.powered-by p:nth-child(4){font-family:'Quicksand';color:rgb(25,27,29);font-size:12.5px;margin-top:15px;margin-bottom:0}@media only screen and (min-width:380px){#home div.layer header div.container div.inner{bottom:-15px}#home div.layer header div.container div.inner h2{font-size:17.5px}#home div.layer header div.container div.inner h2 br{display:none}}@media only screen and (min-width:500px){#footer footer div.layer div.container div.wrapper.desktop-display{display:block}#footer footer div.layer div.container div.wrapper.mobile-display{display:none}}@media only screen and (min-width:650px){#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(2), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(3), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(5), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(8), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(9), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(10), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(11), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(13), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(14), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(16), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(19), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(20), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(21), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(22), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(23), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(24), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(26), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(29), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(30), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(31), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(32), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(33), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(34), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(35), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(36){width:50%}#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(6), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(7), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(17), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(18), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(27), #contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(28){width:25%}#contact div.layer div.container div.wrapper div.box form div.inner input{font-size:22px}#contact div.layer div.container div.wrapper div.box form div.inner textarea{font-size:22px}#contact div.layer div.container div.wrapper div.box form div.wrapper p{font-size:18px}#contact div.layer div.container div.wrapper div.box form input.submit{font-size:22px}}@media only screen and (min-width:850px){#contact div.layer div.container div.wrapper div.box form div.inner input{font-size:27px}#contact div.layer div.container div.wrapper div.box form div.inner textarea{font-size:27px}#contact div.layer div.container div.wrapper div.box form div.wrapper p{font-size:25px}#contact div.layer div.container div.wrapper div.box form input.submit{font-size:27px}}
+/* FONTS */
+	@font-face {
+		font-family:'Bebas';
+		src:url('../../fonts/Bebas/Bebas.eot');
+		src:url('../../fonts/Bebas/Bebas.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Bebas/Bebas.woff2') format('woff2'),
+		url('../../fonts/Bebas/Bebas.woff') format('woff'),
+		url('../../fonts/Bebas/Bebas.ttf') format('truetype'),
+		url('../../fonts/Bebas/Bebas.svg#svgFontName') format('svg');
+	}
+	@font-face {
+		font-family:'Quicksand';
+		src:url('../../fonts/Quicksand/Quicksand.eot');
+		src:url('../../fonts/Quicksand/Quicksand.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Quicksand/Quicksand.woff2') format('woff2'),
+		url('../../fonts/Quicksand/Quicksand.woff') format('woff'),
+		url('../../fonts/Quicksand/Quicksand.ttf') format('truetype'),
+		url('../../fonts/Quicksand/Quicksand.svg#svgFontName') format('svg');
+	}
+/* STANDARD CSS */
+	* {
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+		-webkit-backface-visibility:hidden;
+		-webkit-transition:none;
+	}
+	html {
+		overflow-x:hidden;
+	}
+	body {
+		overflow-x:hidden;
+		margin:0;
+		padding:0;
+	}
+	a {
+		text-decoration:none;
+	}
+	span.anchor {
+		display:block;
+		height:73px;
+		margin-top:-73px;
+		visibility:hidden;
+	}
+	div.loader {
+		-webkit-position:fixed;
+		-moz-position:fixed;
+		-o-position:fixed;
+		-ms-position:fixed;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		-webkit-z-index:9999;
+		-moz-z-index:9999;
+		-o-z-index:9999;
+		-ms-z-index:9999;
+		z-index:9999;
+		background:url('../../img/loading_icon_gears.gif') 50% 50% no-repeat rgb(255,255,255);
+	}
+/* HOME */
+	#home div.layer {
+		background-color:rgb(255,255,255);
+	}
+	#home div.layer header {
+		background-color:rgb(255,255,255);
+		box-shadow:0px 0px 5px 1px rgb(25,27,29);
+		-webkit-position:fixed;
+		-moz-position:fixed;
+		-o-position:fixed;
+		-ms-position:fixed;
+		position:fixed;
+		width:100%;
+		padding:15px;
+		-webkit-z-index:9997;
+		-moz-z-index:9997;
+		-o-z-index:9997;
+		-ms-z-index:9997;
+		z-index:9997;
+		-webkit-transition:background-color 0.5s linear, box-shadow 0.5s linear;
+		-moz-transition:background-color 0.5s linear, box-shadow 0.5s linear;
+		-o-transition:background-color 0.5s linear, box-shadow 0.5s linear;
+		-ms-transition:background-color 0.5s linear, box-shadow 0.5s linear;
+		transition:background-color 0.5s linear, box-shadow 0.5s linear;
+	}
+	#home div.layer header div.container {
+		width:100%;
+		max-width:1200px;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+	}
+	#home div.layer header div.container a img {
+		width:40px;
+		height:auto;
+	}
+	#home div.layer header div.container a h1 {
+		display:inline;
+		font-family:'Bebas';
+		color:rgb(25,27,29);
+		font-size:20px;
+		letter-spacing:5px;
+		padding-left:5px;
+	}
+	#home div.layer header div.container div.inner {
+		position:absolute;
+		right:1px;
+		bottom:-12.5px;
+	}
+	#home div.layer header div.container div.inner h2 {
+		font-family:'Quicksand';
+		text-align:right;
+		color:rgb(63,218,255);
+		font-size:15px;
+		font-weight:800;
+		-webkit-transition:color 0.25s linear;
+		-moz-transition:color 0.25s linear;
+		-o-transition:color 0.25s linear;
+		-ms-transition:color 0.25s linear;
+		transition:color 0.25s linear;
+	}
+/* CONTACT */
+	#contact div.layer {
+		background-image:url("../../img/manhattan_skyline.jpg");
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		-ms-background-size:cover;
+		background-size:cover;
+		background-position:50% 0%;
+		padding-top:73px;
+	}
+	#contact div.layer div.container {
+		width:100%;
+		max-width:1200px;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+		text-align:center;
+		padding:15px;
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+	#contact div.layer div.container div.wrapper {
+		width:100%;
+	}
+	#contact div.layer div.container div.wrapper div.box {
+		width:100%;
+		display:inline-block;
+		vertical-align:middle;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner {
+		width:100%;
+		display:inline-block;
+		vertical-align:middle;
+		padding:5px;
+		font-size:0;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner input {
+		margin-bottom:5px;
+		padding:15px;
+		width:100%;
+		font-family:'Quicksand'; 
+		font-size:18px;
+		font-weight:800;
+		background-color:rgb(63,218,255);
+		color:rgb(25,27,29);
+		text-decoration:none; 
+		display:inline-block;
+		border:2px solid rgb(255,255,255);
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;
+		border-radius:5px;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner input.bump {
+		margin-bottom:5px;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner input.bump2 {
+		margin-bottom:30px;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(6),
+	#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(7),
+	#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(17),
+	#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(18) {
+		width:50%;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner textarea {
+		height:175px;
+		margin-bottom:5px;
+		padding:15px;
+		width:100%;
+		font-family:'Quicksand'; 
+		font-size:18px;
+		font-weight:800;
+		background-color:rgb(63,218,255);
+		color:rgb(25,27,29);
+		text-decoration:none; 
+		display:inline-block;
+		border:2px solid rgb(255,255,255);
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;
+		border-radius:5px;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner textarea.bump {
+		margin-bottom:5px;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner textarea.bump2 {
+		margin-bottom:30px;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner input::-webkit-input-placeholder {
+    color:rgba(25,27,29,0.25);
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner input:-moz-placeholder {
+    color:rgba(25,27,29,0.25);
+    opacity:1;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner input::-moz-placeholder {
+    color:rgba(25,27,29,0.25);
+    opacity:1;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner input:-ms-input-placeholder {
+    color:rgba(25,27,29,0.25);
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner textarea::-webkit-input-placeholder {
+    color:rgba(25,27,29,0.25);
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner textarea:-moz-placeholder {
+    color:rgba(25,27,29,0.25);
+    opacity:1;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner textarea::-moz-placeholder {
+    color:rgba(25,27,29,0.25);
+    opacity:1;
+	}
+	#contact div.layer div.container div.wrapper div.box form div.inner textarea:-ms-input-placeholder {
+    color:rgba(25,27,29,0.25);
+	}
+	#contact div.layer div.container div.wrapper div.box form input.submit {
+		cursor:pointer;
+		padding:15px;
+		font-family:'Quicksand'; 
+		font-size:18px;
+		font-weight:800;
+		margin-top:15px;
+		margin-bottom:15px;
+		background-color:rgb(255,255,255);
+		color:rgb(25,27,29);
+		text-decoration:none; 
+		display:inline-block;
+		border:2px solid rgb(25,27,29);
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;
+		border-radius:5px;
+		-webkit-transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+		-moz-transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+		-o-transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+		-ms-transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+		transition:background-color 0.25s linear, color 0.25s linear, border 0.25s linear;
+	}
+	#contact div.layer div.container div.wrapper div.box form input.submit:hover {
+		background-color:rgb(25,27,29);
+		color:rgb(255,255,255);
+		border:2px solid rgb(255,255,255);
+	}
+	html.can-touch #contact div.layer div.container div.wrapper div.box form input.submit:hover {
+		background-color:rgb(255,255,255);
+		color:rgb(25,27,29);
+		border:2px solid rgb(25,27,29);
+	}
+	#contact div.layer div.container div.wrapper div.box div.thank-you-box {
+		min-height:70vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#contact div.layer div.container div.wrapper div.box div.thank-you-box div.inner {
+		margin:25px;
+		padding:5px;
+		background-color:rgb(255,255,255);
+		border:2px solid rgb(255,255,255);
+		-webkit-border-radius:5px;
+		-moz-border-radius:5px;
+		-o-border-radius:5px;
+		-ms-border-radius:5px;
+		border-radius:5px;
+	}
+	#contact div.layer div.container div.wrapper div.box div.thank-you-box h3.thank-you {
+		font-family:'Quicksand'; 
+		font-size:30px;
+		font-weight:800;
+		color:rgb(25,27,29);
+	}
+	#contact div.layer div.container div.wrapper div.box div.thank-you-box p.thank-you {
+		font-family:'Quicksand'; 
+		font-size:20px;
+		font-weight:400;
+		color:rgb(25,27,29);
+	}
+/* FOOTER */
+	#footer footer div.layer {
+		background-color:rgb(255,255,255);
+	}
+	#footer footer div.layer div.container {
+		width:100%;
+		max-width:1200px;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+		text-align:center;
+		padding:15px;
+	}
+	#footer footer div.layer div.container div.wrapper {
+		width:100%;
+		padding:5px;
+		text-align:center;
+	}
+	#footer footer div.layer div.container div.wrapper.desktop-display {
+		display:none;
+	}
+	#footer footer div.layer div.container div.wrapper div.box {
+		display:inline-block;
+		text-align:left;
+		padding:5px;
+	}
+	#footer footer div.layer div.container div.wrapper div.box div.inner {
+		padding:5px;
+	}
+	#footer footer div.container div.wrapper div.box div.inner img {
+		width:30px;
+		height:auto;
+	}
+	#footer footer div.layer div.container div.wrapper div.box div.inner p {
+		display:inline;
+		font-family:'Quicksand';
+		color:rgb(25,27,29);
+		font-size:15px;
+		font-weight:800;
+		vertical-align:9px;
+		padding-left:5px;
+	}
+	#footer footer div.layer div.container div.wrapper div.box div.inner p a {
+		color:rgb(25,27,29);
+		text-decoration:underline;
+	}
+	#footer footer a div.layer.powered-by {
+		background-color:rgb(255,255,255);
+	}
+	#footer footer a div.layer div.container.powered-by {
+		width:100%;
+		max-width:1200px;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+		text-align:center;
+		padding:15px;
+	}
+	#footer footer a div.layer div.container.powered-by p {
+		font-family:'Quicksand';
+		color:rgb(25,27,29);
+		font-size:15px;
+		margin-top:0;
+		margin-bottom:5px;
+	}
+	#footer footer a div.layer div.container.powered-by img {
+		width:30px;
+		height:auto;
+		margin:0;
+	}
+	#footer footer a div.layer div.container.powered-by p:nth-child(3) {
+		display:inline;
+		font-family:'Bebas';
+		color:rgb(25,27,29);
+		font-size:15px;
+		font-weight:800;
+		letter-spacing:3.75px;
+		padding-left:3.75px;
+	}
+	#footer footer a div.layer div.container.powered-by p:nth-child(4) {
+		font-family:'Quicksand';
+		color:rgb(25,27,29);
+		font-size:12.5px;
+		margin-top:15px;
+		margin-bottom:0;
+	}
+/* MEDIA QUERIES */
+	@media only screen and (min-width:380px) {
+		#home div.layer header div.container div.inner {
+			bottom:-15px;
+		}
+		#home div.layer header div.container div.inner h2 {
+			font-size:17.5px;
+		}
+		#home div.layer header div.container div.inner h2 br {
+			display:none;
+		}
+	}
+	@media only screen and (min-width:500px) {
+		#footer footer div.layer div.container div.wrapper.desktop-display {
+			display:block;
+		}
+		#footer footer div.layer div.container div.wrapper.mobile-display {
+			display:none;
+		}
+	}
+	@media only screen and (min-width:650px) {
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(2),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(3),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(5),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(8),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(9),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(10),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(11),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(13),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(14),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(16),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(19),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(20),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(21),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(22),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(23),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(24),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(26),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(29),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(30),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(31),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(32),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(33),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(34),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(35),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(36) {
+		width:50%;
+		}
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(6),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(7),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(17),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(18),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(27),
+		#contact div.layer div.container div.wrapper div.box form div.inner input:nth-child(28) {
+		width:25%;
+		}
+		#contact div.layer div.container div.wrapper div.box form div.inner input {
+			font-size:22px;
+		}
+		#contact div.layer div.container div.wrapper div.box form div.inner textarea {
+			font-size:22px;
+		}
+		#contact div.layer div.container div.wrapper div.box form div.wrapper p {
+			font-size:18px;
+		}
+		#contact div.layer div.container div.wrapper div.box form input.submit {
+			font-size:22px;
+		}
+	}
+	@media only screen and (min-width:850px) {
+		#contact div.layer div.container div.wrapper div.box form div.inner input {
+			font-size:27px;
+		}
+		#contact div.layer div.container div.wrapper div.box form div.inner textarea {
+			font-size:27px;
+		}
+		#contact div.layer div.container div.wrapper div.box form div.wrapper p {
+			font-size:25px;
+		}
+		#contact div.layer div.container div.wrapper div.box form input.submit {
+			font-size:27px;
+		}
+	}
+	
