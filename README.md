@@ -1,2 +1,2 @@
-# http://blakedavies.net
-http://blakedavies.net
+# https://blakedavies.net
+https://blakedavies.net
